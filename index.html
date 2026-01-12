@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="借りる前の不安を、借りた後の安心に">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="ギャランティークリアガイド">
+  <meta property="og:description" content="借りる前の不安を、借りた後の安心に">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ギャランティークリアガイド">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>ギャランティークリアガイド</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Index Page Specific Styles */
+    /* 注意: .posts-list, .post-card のレイアウトスタイルは style.css の
+       articleLayoutCss, cardStyleVariantCss で定義されています */
+
+    .main-content {
+      max-width: var(--content-width, 1200px);
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+    }
+
+    /* サイドバーなし */
+    .main-content.sidebar-none {
+      grid-template-columns: 1fr;
+    }
+    .main-content.sidebar-none .sidebar {
+      display: none;
+    }
+
+    /* サイドバー左配置 */
+    .main-content.sidebar-left {
+      grid-template-columns: 320px 1fr;
+    }
+    .main-content.sidebar-left .sidebar {
+      order: -1;
+    }
+
+    /* サイドバー狭め */
+    .main-content.sidebar-narrow {
+      grid-template-columns: 1fr 240px;
+    }
+    .main-content.sidebar-narrow.sidebar-left {
+      grid-template-columns: 240px 1fr;
+    }
+
+    /* サイドバー広め */
+    .main-content.sidebar-wide {
+      grid-template-columns: 1fr 320px;
+    }
+    .main-content.sidebar-wide.sidebar-left {
+      grid-template-columns: 320px 1fr;
+    }
+
+    /* 追従サイドバー */
+    .main-content.sidebar-sticky .sidebar {
+      position: sticky;
+      top: 80px;
+      height: fit-content;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+    }
+
+    /* 折りたたみサイドバー */
+    .main-content.sidebar-collapsible .sidebar {
+      transition: transform 0.3s ease, width 0.3s ease;
+    }
+    .main-content.sidebar-collapsible .sidebar.collapsed {
+      width: 60px;
+      overflow: hidden;
+    }
+    .main-content.sidebar-collapsible .sidebar.collapsed .sidebar-section h3,
+    .main-content.sidebar-collapsible .sidebar.collapsed .sidebar-section ul {
+      display: none;
+    }
+
+    /* フローティングサイドバー */
+    .main-content.sidebar-floating {
+      grid-template-columns: 1fr;
+    }
+    .main-content.sidebar-floating .sidebar {
+      position: fixed;
+      right: -300px;
+      top: 80px;
+      width: 280px;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      background: var(--bg);
+      box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: right 0.3s ease;
+      z-index: 100;
+    }
+    .main-content.sidebar-floating .sidebar.visible {
+      right: 0;
+    }
+
+    /* 両サイドバー */
+    .main-content.sidebar-dual {
+      grid-template-columns: 200px 1fr 200px;
+    }
+    .main-content.sidebar-dual .sidebar-left-panel {
+      order: -1;
+    }
+
+    /* オーバーレイサイドバー（モバイル風） */
+    .main-content.sidebar-overlay {
+      grid-template-columns: 1fr;
+    }
+    .main-content.sidebar-overlay .sidebar {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 280px;
+      height: 100vh;
+      background: var(--bg);
+      box-shadow: -4px 0 20px rgba(0,0,0,0.2);
+      padding: 60px 20px 20px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    .main-content.sidebar-overlay .sidebar.open {
+      transform: translateX(0);
+    }
+    .sidebar-overlay-toggle {
+      display: none;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .main-content.sidebar-overlay .sidebar-overlay-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 968px) {
+      .main-content,
+      .main-content.sidebar-left,
+      .main-content.sidebar-narrow,
+      .main-content.sidebar-wide,
+      .main-content.sidebar-narrow.sidebar-left,
+      .main-content.sidebar-wide.sidebar-left,
+      .main-content.sidebar-dual {
+        grid-template-columns: 1fr;
+      }
+      .main-content.sidebar-left .sidebar,
+      .main-content.sidebar-dual .sidebar-left-panel {
+        order: 0;
+      }
+      .main-content.sidebar-sticky .sidebar {
+        position: static;
+        max-height: none;
+      }
+    }
+
+    .posts-section h2 {
+      font-size: calc(24px * var(--heading-scale, 1));
+      font-weight: 700;
+      margin-bottom: 30px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    /* post-card 内部要素のスタイル（レイアウトはstyle.cssで定義） */
+    .post-card-content {
+      padding: 20px;
+    }
+
+    .post-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .post-card-title a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .post-card-title a:hover {
+      color: var(--primary);
+    }
+
+    .post-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+
+    .category-badge {
+      background: var(--primary);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .post-card-excerpt {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .post-card-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius, 6px);
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s ease, transform 0.2s ease;
+      position: relative;
+      z-index: 10;
+    }
+
+    .post-card-btn:hover {
+      background: var(--primary-dark, var(--primary));
+      transform: translateY(-1px);
+    }
+
+    /* Sidebar - style.cssの.sidebar-widgetと統一 */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-widget {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius, 8px);
+      padding: 20px;
+    }
+
+    .sidebar-widget .widget-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .sidebar-widget .widget-title svg {
+      color: var(--primary);
+    }
+
+    .sidebar-widget .widget-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-widget .widget-list li {
+      margin: 10px 0;
+    }
+
+    .sidebar-widget .widget-list li a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .sidebar-widget .widget-list li a:hover {
+      color: var(--primary);
+    }
+
+    .sidebar-widget .widget-list li time {
+      display: block;
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 3px;
+    }
+
+    .category-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .category-count {
+      background: var(--border);
+      color: var(--text-light);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+
+    /* フィルター状態表示 */
+    .filter-status {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background: var(--primary);
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .filter-status.active {
+      display: flex;
+    }
+    .filter-status-text {
+      font-size: 14px;
+    }
+    .filter-status-text strong {
+      font-weight: 700;
+    }
+    .filter-clear-btn {
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+    .filter-clear-btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* カテゴリリンクのアクティブ状態 */
+    .category-filter-link {
+      cursor: pointer;
+    }
+    .category-filter-link.active {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* 記事の非表示アニメーション */
+    .post-card {
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .post-card.hidden {
+      display: none;
+    }
+
+    .no-posts {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-light);
+      background: var(--bg-alt);
+      border-radius: 12px;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 15px;
+      background: var(--bg);
+      border-radius: 8px;
+    }
+
+    .stat-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-light);
+    }
+
+    /* 運営者プロフィール */
+    .sidebar-profile .profile-content {
+      text-align: center;
+    }
+    .sidebar-profile .profile-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 5px;
+    }
+    .sidebar-profile .profile-company {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+    .sidebar-profile .profile-description {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .sidebar-profile .profile-link {
+      display: inline-block;
+      color: var(--primary);
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .sidebar-profile .profile-link:hover {
+      text-decoration: underline;
+    }
+
+    /* CTA */
+    .sidebar-cta .cta-box {
+      background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--primary) 80%, #000));
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .sidebar-cta .cta-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .sidebar-cta .cta-description {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+    .sidebar-cta .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary);
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sidebar-cta .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* index.html レスポンシブ - 768px */
+    @media (max-width: 768px) {
+      .posts-section h2 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+      }
+      .post-card-content {
+        padding: 12px 10px;
+      }
+      .post-card-title {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+      .post-card-meta {
+        font-size: 11px;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .category-badge {
+        font-size: 10px;
+        padding: 2px 6px;
+      }
+      .post-card-excerpt {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .post-card-btn {
+        margin-top: 10px;
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+      .sidebar {
+        gap: 14px;
+      }
+      .sidebar-widget {
+        padding: 14px 12px;
+        border-radius: 6px;
+      }
+      .sidebar-widget .widget-title {
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+      }
+      .sidebar-widget .widget-title svg {
+        width: 16px;
+        height: 16px;
+      }
+      .sidebar-widget .widget-list li {
+        margin: 8px 0;
+      }
+      .sidebar-widget .widget-list li a {
+        font-size: 13px;
+      }
+      .sidebar-widget .widget-list li time {
+        font-size: 11px;
+      }
+      .category-count {
+        font-size: 11px;
+        padding: 1px 6px;
+      }
+      .stats-grid {
+        gap: 10px;
+      }
+      .stat-item {
+        padding: 10px;
+      }
+      .stat-number {
+        font-size: 20px;
+      }
+      .stat-label {
+        font-size: 11px;
+      }
+      .sidebar-profile .profile-name {
+        font-size: 16px;
+      }
+      .sidebar-profile .profile-company {
+        font-size: 13px;
+      }
+      .sidebar-profile .profile-description {
+        font-size: 12px;
+      }
+      .sidebar-profile .profile-link {
+        font-size: 12px;
+      }
+      .sidebar-cta .cta-box {
+        padding: 14px 12px;
+        border-radius: 8px;
+      }
+      .sidebar-cta .cta-title {
+        font-size: 14px;
+      }
+      .sidebar-cta .cta-description {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      .sidebar-cta .cta-button {
+        padding: 8px 16px;
+        font-size: 13px;
+      }
+      .filter-status {
+        padding: 10px 14px;
+        margin-bottom: 14px;
+        border-radius: 6px;
+      }
+      .filter-status-text {
+        font-size: 12px;
+      }
+      .filter-clear-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+      }
+      .no-posts {
+        padding: 40px 14px;
+        border-radius: 8px;
+      }
+      .no-posts p {
+        font-size: 14px;
+      }
+    }
+
+    /* index.html レスポンシブ - 480px（超コンパクト） */
+    @media (max-width: 480px) {
+      .posts-section h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        padding-bottom: 6px;
+      }
+      .post-card-content {
+        padding: 10px 8px;
+      }
+      .post-card-title {
+        font-size: 14px;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+      .post-card-meta {
+        font-size: 10px;
+        gap: 6px;
+        margin-bottom: 6px;
+      }
+      .category-badge {
+        font-size: 9px;
+        padding: 1px 5px;
+        border-radius: 3px;
+      }
+      .post-card-excerpt {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .post-card-btn {
+        margin-top: 8px;
+        padding: 5px 10px;
+        font-size: 11px;
+        border-radius: 4px;
+      }
+      .sidebar {
+        gap: 10px;
+      }
+      .sidebar-widget {
+        padding: 10px 8px;
+        border-radius: 4px;
+      }
+      .sidebar-widget .widget-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        gap: 6px;
+      }
+      .sidebar-widget .widget-title svg {
+        width: 14px;
+        height: 14px;
+      }
+      .sidebar-widget .widget-list li {
+        margin: 6px 0;
+      }
+      .sidebar-widget .widget-list li a {
+        font-size: 12px;
+      }
+      .sidebar-widget .widget-list li time {
+        font-size: 10px;
+        margin-top: 2px;
+      }
+      .category-count {
+        font-size: 10px;
+        padding: 1px 5px;
+        border-radius: 8px;
+      }
+      .stats-grid {
+        gap: 8px;
+      }
+      .stat-item {
+        padding: 8px 6px;
+        border-radius: 6px;
+      }
+      .stat-number {
+        font-size: 18px;
+      }
+      .stat-label {
+        font-size: 10px;
+      }
+      .sidebar-profile .profile-name {
+        font-size: 14px;
+        margin-bottom: 3px;
+      }
+      .sidebar-profile .profile-company {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .sidebar-profile .profile-description {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .sidebar-profile .profile-link {
+        font-size: 11px;
+      }
+      .sidebar-cta .cta-box {
+        padding: 12px 10px;
+        border-radius: 6px;
+      }
+      .sidebar-cta .cta-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+      .sidebar-cta .cta-description {
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+      .sidebar-cta .cta-button {
+        padding: 7px 14px;
+        font-size: 12px;
+        border-radius: 4px;
+      }
+      .filter-status {
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+      .filter-status-text {
+        font-size: 11px;
+      }
+      .filter-clear-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+        border-radius: 4px;
+      }
+      .no-posts {
+        padding: 30px 10px;
+        border-radius: 6px;
+      }
+      .no-posts p {
+        font-size: 13px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Header (topbar-nav) -->
+  <header class="site-header header-topbar-nav">
+  <div class="topbar">
+    <div class="container">
+      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
+      <div class="topbar-social">
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="container">
+      <a href="./index.html" class="site-logo">ギャランティークリアガイド</a>
+      <nav class="site-nav site-nav-desktop">
+      <a href="./index.html">ホーム</a>
+      <a href="./index.html#articles">記事一覧</a>
+      <a href="./about.html">サイトについて</a>
+      <a href="./contact.html">お問い合わせ</a>
+      </nav>
+      
+    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+      
+    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
+      <a href="./index.html">ホーム</a>
+      <a href="./index.html#articles">記事一覧</a>
+      <a href="./about.html">サイトについて</a>
+      <a href="./contact.html">お問い合わせ</a>
+    </nav>
+    </div>
+  </div>
+</header>
+
+  <!-- Hero Section (large) -->
+  <section class="hero hero-large">
+  <div class="container">
+    <h1>ギャランティークリアガイド</h1>
+    <p>借りる前の不安を、借りた後の安心に</p>
+  </div>
+</section>
+
+  <!-- Main Content with Sidebar (right-wide) -->
+  <div class="main-content sidebar-wide">
+    <!-- Articles Section -->
+    <section class="posts-section" id="articles">
+      <h2>Latest Articles</h2>
+      <!-- フィルター状態表示 -->
+      <div class="filter-status" id="filter-status">
+        <span class="filter-status-text">カテゴリ: <strong id="filter-category-name"></strong></span>
+        <button class="filter-clear-btn" id="filter-clear-btn">すべて表示</button>
+      </div>
+      <div class="posts-list" id="posts-list">
+        
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 初めて">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン とは">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 審査">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 即日">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">即日融資可能なカードローン比較｜本当に今日借りられる？</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">即日融資可能なカードローン比較｜本当に今日借りられる？についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 金利 安い">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">金利の安いカードローンランキング｜損しない選び方のポイント</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">金利の安いカードローンランキング｜損しない選び方のポイントについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 危険">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンは危険安全に利用するための5つのルール.html">カードローンは危険？安全に利用するための5つのルール</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンは危険？安全に利用するための5つのルールについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンは危険安全に利用するための5つのルール.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 銀行 消費者金融">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-銀行カードローンvs消費者金融あなたに向いているのはどっち.html">銀行カードローンvs消費者金融｜あなたに向いているのはどっち？</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">銀行カードローンvs消費者金融｜あなたに向いているのはどっち？についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-銀行カードローンvs消費者金融あなたに向いているのはどっち.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 在籍確認なし">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-在籍確認なしのカードローンは存在する職場バレを防ぐ方法.html">在籍確認なしのカードローンは存在する？職場バレを防ぐ方法</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">在籍確認なしのカードローンは存在する？職場バレを防ぐ方法についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-在籍確認なしのカードローンは存在する職場バレを防ぐ方法.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 審査 甘い">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-審査が甘いカードローンの真実本当に借りやすい会社の見分け方.html">審査が甘いカードローンの真実｜本当に借りやすい会社の見分け方</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">審査が甘いカードローンの真実｜本当に借りやすい会社の見分け方についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-審査が甘いカードローンの真実本当に借りやすい会社の見分け方.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 信用情報">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンで信用情報に傷がつくブラックリストの実態.html">カードローンで信用情報に傷がつく？ブラックリストの実態</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンで信用情報に傷がつく？ブラックリストの実態についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンで信用情報に傷がつくブラックリストの実態.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 返済 シミュレーション">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-10万円借りたら返済額はいくらカードローン返済シミュレーション.html">10万円借りたら返済額はいくら？カードローン返済シミュレーション</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">10万円借りたら返済額はいくら？カードローン返済シミュレーションについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-10万円借りたら返済額はいくらカードローン返済シミュレーション.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 返済 苦しい">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの返済が苦しい時の対処法知っておくべき相談先.html">カードローンの返済が苦しい時の対処法｜知っておくべき相談先</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの返済が苦しい時の対処法｜知っておくべき相談先についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの返済が苦しい時の対処法知っておくべき相談先.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン おまとめ">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-複数のカードローンを借りている人へおまとめローンのメリット.html">複数のカードローンを借りている人へ｜おまとめローンのメリット</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">複数のカードローンを借りている人へ｜おまとめローンのメリットについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-複数のカードローンを借りている人へおまとめローンのメリット.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 増額">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの限度額を増額する方法審査基準と注意点.html">カードローンの限度額を増額する方法｜審査基準と注意点</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの限度額を増額する方法｜審査基準と注意点についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの限度額を増額する方法審査基準と注意点.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 無職">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-無職でも借りられるカードローン審査の収入基準を解説.html">無職でも借りられる？カードローン審査の収入基準を解説</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">無職でも借りられる？カードローン審査の収入基準を解説についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-無職でも借りられるカードローン審査の収入基準を解説.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 闇金">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-闇金とカードローンの見分け方絶対に借りてはいけない業者の特徴.html">闇金とカードローンの見分け方｜絶対に借りてはいけない業者の特徴</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">闇金とカードローンの見分け方｜絶対に借りてはいけない業者の特徴についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-闇金とカードローンの見分け方絶対に借りてはいけない業者の特徴.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 自己破産">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンで自己破産する人の共通点借りすぎないための心得.html">カードローンで自己破産する人の共通点｜借りすぎないための心得</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンで自己破産する人の共通点｜借りすぎないための心得についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンで自己破産する人の共通点借りすぎないための心得.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 保証会社">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの保証会社とは審査での役割を徹底解説.html">カードローンの保証会社とは？審査での役割を徹底解説</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの保証会社とは？審査での役割を徹底解説についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの保証会社とは審査での役割を徹底解説.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="キャリア" data-keywords="カードローン 総量規制">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-総量規制とは年収の3分の1以上借りられない理由.html">総量規制とは？年収の3分の1以上借りられない理由</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html" class="category-badge" data-filter-category="キャリア">キャリア</a>
+            </div>
+            <p class="post-card-excerpt">総量規制とは？年収の3分の1以上借りられない理由についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-総量規制とは年収の3分の1以上借りられない理由.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 返済 遅延">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの返済遅延で起こること信用情報への影響と対処法.html">カードローンの返済遅延で起こること｜信用情報への影響と対処法</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの返済遅延で起こること｜信用情報への影響と対処法についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの返済遅延で起こること信用情報への影響と対処法.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 利息 計算">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの利息計算方法実際にいくら払うことになる.html">カードローンの利息計算方法｜実際にいくら払うことになる？</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの利息計算方法｜実際にいくら払うことになる？についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの利息計算方法実際にいくら払うことになる.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 学生">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-学生でもカードローンは借りられる審査条件と注意点.html">学生でもカードローンは借りられる？審査条件と注意点</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">学生でもカードローンは借りられる？審査条件と注意点についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-学生でもカードローンは借りられる審査条件と注意点.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 専業主婦">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-専業主婦がカードローンを利用する方法配偶者貸付とは.html">専業主婦がカードローンを利用する方法｜配偶者貸付とは</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">専業主婦がカードローンを利用する方法｜配偶者貸付とはについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-専業主婦がカードローンを利用する方法配偶者貸付とは.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン アルバイト">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-アルバイトパートでも審査に通るカードローンの選び方.html">アルバイト・パートでも審査に通るカードローンの選び方</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">アルバイト・パートでも審査に通るカードローンの選び方についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-アルバイトパートでも審査に通るカードローンの選び方.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 一括返済">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの一括返済はお得メリットと手続き方法.html">カードローンの一括返済はお得？メリットと手続き方法</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの一括返済はお得？メリットと手続き方法についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの一括返済はお得メリットと手続き方法.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 延滞">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンを延滞するとどうなる段階別のペナルティ解説.html">カードローンを延滞するとどうなる？段階別のペナルティ解説</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンを延滞するとどうなる？段階別のペナルティ解説についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンを延滞するとどうなる段階別のペナルティ解説.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 借り換え">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの借り換えで返済額を減らす方法成功の条件.html">カードローンの借り換えで返済額を減らす方法｜成功の条件</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの借り換えで返済額を減らす方法｜成功の条件についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの借り換えで返済額を減らす方法成功の条件.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン Web完結">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-web完結で申し込めるカードローン郵送物なしで借りる方法.html">Web完結で申し込めるカードローン｜郵送物なしで借りる方法</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">Web完結で申し込めるカードローン｜郵送物なしで借りる方法についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-web完結で申し込めるカードローン郵送物なしで借りる方法.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 申し込みブラック">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの申し込みブラックとは短期間に複数申込のリスク.html">カードローンの申し込みブラックとは？短期間に複数申込のリスク</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの申し込みブラックとは？短期間に複数申込のリスクについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの申し込みブラックとは短期間に複数申込のリスク.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン クレジットカード 比較">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンとクレジットカードのキャッシングどっちが得.html">カードローンとクレジットカードのキャッシング｜どっちが得？</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンとクレジットカードのキャッシング｜どっちが得？についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンとクレジットカードのキャッシングどっちが得.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="銀行カードローン 審査">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-銀行カードローンの審査は厳しい消費者金融との違い.html">銀行カードローンの審査は厳しい？消費者金融との違い</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">銀行カードローンの審査は厳しい？消費者金融との違いについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-銀行カードローンの審査は厳しい消費者金融との違い.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 返済方法">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの返済方法まとめatm口座引落繰上返済.html">カードローンの返済方法まとめ｜ATM・口座引落・繰上返済</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの返済方法まとめ｜ATM・口座引落・繰上返済についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの返済方法まとめatm口座引落繰上返済.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 50万">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンで50万円借りる条件必要書類と審査基準.html">カードローンで50万円借りる条件｜必要書類と審査基準</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンで50万円借りる条件｜必要書類と審査基準についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンで50万円借りる条件必要書類と審査基準.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 限度額">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの利用限度額はどう決まる増枠のコツ.html">カードローンの利用限度額はどう決まる？増枠のコツ</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの利用限度額はどう決まる？増枠のコツについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの利用限度額はどう決まる増枠のコツ.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 必要書類">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローン審査に必要な書類本人確認と収入証明の準備.html">カードローン審査に必要な書類｜本人確認と収入証明の準備</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローン審査に必要な書類｜本人確認と収入証明の準備についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローン審査に必要な書類本人確認と収入証明の準備.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン バレない">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-家族にバレずにカードローンを利用する方法郵送物電話対策.html">家族にバレずにカードローンを利用する方法｜郵送物・電話対策</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">家族にバレずにカードローンを利用する方法｜郵送物・電話対策についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-家族にバレずにカードローンを利用する方法郵送物電話対策.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 金利 18%">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの金利18は高い他の借入方法と徹底比較.html">カードローンの金利18%は高い？他の借入方法と徹底比較</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの金利18%は高い？他の借入方法と徹底比較についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの金利18は高い他の借入方法と徹底比較.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 過払い金">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンの過払い金請求はできる対象条件と手続き.html">カードローンの過払い金請求はできる？対象条件と手続き</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンの過払い金請求はできる？対象条件と手続きについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンの過払い金請求はできる対象条件と手続き.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 低金利">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-低金利カードローンの落とし穴審査難易度と条件の実態.html">低金利カードローンの落とし穴｜審査難易度と条件の実態</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">低金利カードローンの落とし穴｜審査難易度と条件の実態についての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-低金利カードローンの落とし穴審査難易度と条件の実態.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="金融・投資" data-keywords="カードローン 100万">
+          <div class="post-card-content">
+            <h3 class="post-card-title">
+              <a href="/articles/2026-01-12-カードローンで100万円借りる方法年収条件と返済プラン.html">カードローンで100万円借りる方法｜年収条件と返済プラン</a>
+            </h3>
+            <div class="post-card-meta">
+              <time datetime="2026-01-12">2026年1月12日</time>
+              <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-badge" data-filter-category="金融・投資">金融・投資</a>
+            </div>
+            <p class="post-card-excerpt">カードローンで100万円借りる方法｜年収条件と返済プランについての詳細な解説記事です。</p>
+            <a href="/articles/2026-01-12-カードローンで100万円借りる方法年収条件と返済プラン.html" class="post-card-btn" target="_blank" rel="noopener">記事を読む</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    
+    <aside class="sidebar">
+      <!-- 運営者情報 -->
+      
+      <div class="sidebar-widget sidebar-profile">
+        <h3 class="widget-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          運営者情報
+        </h3>
+        <div class="profile-content">
+          <p class="profile-name">ギャランティークリアガイド</p>
+          <p class="profile-company">運営者名</p>
+          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
+          <a href="./company.html" class="profile-link">運営者詳細 →</a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="sidebar-widget sidebar-stats">
+        <h3 class="widget-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          サイト統計
+        </h3>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">40</div>
+            <div class="stat-label">記事数</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">カテゴリ数</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="sidebar-widget sidebar-categories" id="categories">
+        <h3 class="widget-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
+          カテゴリー
+        </h3>
+        <ul class="widget-list category-list">
+          
+          <li>
+            <a href="category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html" class="category-filter-link" data-category="金融・投資">金融・投資</a>
+            <span class="category-count">39</span>
+          </li>
+
+          <li>
+            <a href="category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html" class="category-filter-link" data-category="キャリア">キャリア</a>
+            <span class="category-count">1</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Recent Articles -->
+      <div class="sidebar-widget sidebar-latest">
+        <h3 class="widget-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          新着記事
+        </h3>
+        <ul class="widget-list recent-list">
+          
+          <li>
+            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</a>
+            <time datetime="2026-01-12">1/12</time>
+          </li>
+
+          <li>
+            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</a>
+            <time datetime="2026-01-12">1/12</time>
+          </li>
+
+          <li>
+            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</a>
+            <time datetime="2026-01-12">1/12</time>
+          </li>
+
+          <li>
+            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">即日融資可能なカードローン比較｜本当に今日借りられる？</a>
+            <time datetime="2026-01-12">1/12</time>
+          </li>
+
+          <li>
+            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">金利の安いカードローンランキング｜損しない選び方のポイント</a>
+            <time datetime="2026-01-12">1/12</time>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA（お問い合わせ） -->
+      <div class="sidebar-widget sidebar-cta">
+        <div class="cta-box">
+          <p class="cta-title">お問い合わせ</p>
+          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
+          <a href="./contact.html" class="cta-button">お問い合わせ</a>
+        </div>
+      </div>
+    </aside>
+    
+  </div>
+
+  <!-- Footer (mega-footer) -->
+  <footer class="site-footer footer-mega">
+  <div class="container">
+    <div class="footer-mega-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">ギャランティークリアガイド</h3>
+        <p>借りる前の不安を、借りた後の安心に</p>
+        
+      </div>
+      <div class="footer-col">
+        <h4>コンテンツ</h4>
+        <ul>
+          <li><a href="./index.html#articles">記事一覧</a></li>
+          <li><a href="./about.html">サイトについて</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法的情報</h4>
+        <ul>
+          <li><a href="./privacy.html">プライバシーポリシー</a></li>
+          <li><a href="./company.html">運営者情報</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="./contact.html">お問い合わせフォーム</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 運営者名 All rights reserved.</p>
+      <nav class="footer-legal">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./company.html">Company</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // カテゴリフィルタリング機能
+    (function() {
+      const postsList = document.getElementById('posts-list');
+      const filterStatus = document.getElementById('filter-status');
+      const filterCategoryName = document.getElementById('filter-category-name');
+      const filterClearBtn = document.getElementById('filter-clear-btn');
+      const categoryLinks = document.querySelectorAll('.category-filter-link, [data-filter-category]');
+
+      if (!postsList) return;
+
+      let currentFilter = null;
+
+      // URLパラメータからフィルターを取得
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialCategory = urlParams.get('category');
+      if (initialCategory) {
+        filterByCategory(initialCategory);
+      }
+
+      // カテゴリリンクにクリックイベントを追加
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const category = this.dataset.category || this.dataset.filterCategory;
+          if (category) {
+            filterByCategory(category);
+            // URLを更新（ページ遷移なし）
+            const newUrl = window.location.pathname + '?category=' + encodeURIComponent(category);
+            history.pushState({ category }, '', newUrl);
+          }
+        });
+      });
+
+      // クリアボタン
+      if (filterClearBtn) {
+        filterClearBtn.addEventListener('click', function() {
+          clearFilter();
+          history.pushState({}, '', window.location.pathname);
+        });
+      }
+
+      // ブラウザの戻る/進む対応
+      window.addEventListener('popstate', function(e) {
+        if (e.state && e.state.category) {
+          filterByCategory(e.state.category);
+        } else {
+          clearFilter();
+        }
+      });
+
+      function filterByCategory(category) {
+        currentFilter = category;
+        const articles = postsList.querySelectorAll('.post-card');
+        let visibleCount = 0;
+
+        articles.forEach(article => {
+          const articleCategory = article.dataset.category;
+          if (articleCategory === category) {
+            article.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            article.classList.add('hidden');
+          }
+        });
+
+        // フィルター状態を表示
+        if (filterStatus && filterCategoryName) {
+          filterStatus.classList.add('active');
+          filterCategoryName.textContent = category;
+        }
+
+        // サイドバーのカテゴリリンクをハイライト
+        document.querySelectorAll('.category-filter-link').forEach(link => {
+          if (link.dataset.category === category) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+
+      function clearFilter() {
+        currentFilter = null;
+        const articles = postsList.querySelectorAll('.post-card');
+        articles.forEach(article => {
+          article.classList.remove('hidden');
+        });
+
+        if (filterStatus) {
+          filterStatus.classList.remove('active');
+        }
+
+        document.querySelectorAll('.category-filter-link').forEach(link => {
+          link.classList.remove('active');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
