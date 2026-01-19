@@ -1,0 +1,11 @@
+# Robots.txt for ギャランティークリアガイド
+# https://ikemenltd.github.io/Guarantee-clearguide/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ikemenltd.github.io/Guarantee-clearguide/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
