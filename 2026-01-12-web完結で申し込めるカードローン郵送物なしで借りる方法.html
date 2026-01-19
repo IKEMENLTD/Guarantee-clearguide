@@ -15,7 +15,8 @@
   
   <title>Web完結で申し込めるカードローン｜郵送物なしで借りる方法</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="Web完結で申し込めるカードローン｜郵送物なしで借りる方法" />
   <meta property="og:description" content="「Web完結のカードローンを利用すれば、郵送書類なしで手続きが完了。借入額の上限は最大◯◯万円まで可能。」 現代社会においては、借入手続きのデジタル化が進んでいます。特に、カードローンは、Web上で完結できるサービスが増えてきました。..." />
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>Web完結で申し込めるカードローン｜郵送物なしで借りる方法</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:56:14.596Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2943,40 +2920,47 @@
   </ol>
 </nav>
 
-      <p>「Web完結のカードローンを利用すれば、郵送書類なしで手続きが完了。借入額の上限は最大◯◯万円まで可能。」</p>
-<p>現代社会においては、借入手続きのデジタル化が進んでいます。特に、カードローンは、Web上で完結できるサービスが増えてきました。本記事では、Web完結型のカードローンの特徴や、郵送物なしで借りる方法について解説します。</p>
-<h3 id="section-1">カードローンのWebサービスの特徴</h3>
-<p>カードローンは従来、書類の郵送や来店が必要とされていました。しかし近年、オンラインで手続きを完了できるサービスが登場しています。これらのサービスには以下のような特徴があります。</p>
-<p>#### スピーディな申し込み</p>
-<p>Web完結型のカードローンでは、必要書類のアップロードや、オンラインでの本人確認など、すべての手続きがオンラインで完了します。従来のカードローンと比べて、申し込みから審査、契約まで、平均して2時間短縮できるのが特徴です（ABC銀行調査, 2024）。</p>
-<p>#### 郵送物がない</p>
-<p>Web完結型のカードローンでは、書類の郵送が不要です。申し込みから契約まで、すべてオンラインで行うことができるため、わざわざ書類を郵送する手間がありません。</p>
-<p>#### 自宅や職場から申し込める</p>
-<p>Web完結型のカードローンは、自宅やオフィスなど、いつでも好きな場所から申し込めます。窓口に足を運ぶ必要がないため、時間や場所に制限されることなく、手軽に手続きを進めることができます。</p>
-<h3 id="section-2">Web完結型カードローンの活用シーン</h3>
-<p>Web完結型のカードローンは、様々な場面で活用できます。代表的な活用シーンは以下のようなものが考えられます。</p>
-<p>#### 急な資金繰りの悪化への対応</p>
-<p>思わぬタイミングで資金繰りが悪化することがあります。そのような緊急時に、Web完結型のカードローンを活用すれば、73%の企業が素早く資金を調達できたと回答しています（XYZ調査, 2023）。</p>
-<p>#### 来店が難しい人のための選択肢</p>
-<p>体調不良や、遠方に住んでいるなど、窓口に来店するのが難しい人にとって、Web完結型のカードローンは便利な選択肢となります。利用者の82%が来店不要で申し込めたと回答しています（ABC銀行調査, 2024）。</p>
-<p>#### 書類の保管が面倒な人向け</p>
-<p>書類の保管や郵送が面倒な人は、Web完結型のカードローンを利用することで、92%が煩雑な手続きを避けられたと回答しています（XYZ調査, 2023）。</p>
-<h3 id="section-3">Web完結型カードローンの選び方</h3>
-<p>Web完結型のカードローンを選ぶ際のポイントは以下の通りです。</p>
-<p>#### 金利や借入上限額</p>
-<p>カードローンの条件面では、年間平均金利8.5%（ABC銀行調査, 2024）や、借入上限額200万円（XYZ調査, 2023）が一般的です。自身のニーズに合ったサービスを選びましょう。</p>
-<p>#### 審査の早さ</p>
-<p>Web完結型のカードローンは、申し込みからスピーディに審査が行われます。申し込みから実際に借りられるまでの平均所要時間は1.5日（ABC銀行調査, 2024）です。</p>
-<p>#### 追加書類の有無</p>
-<p>一部の事業者では、オンラインでの本人確認以外に、追加の書類提出を求める場合があります。そのような場合は、郵送物がなくならないため、注意が必要です。</p>
+      <p>「家族にバレずにお金を借りたい」「郵送物が届くのは困る」という方に朗報です。近年、Web完結で申し込みから借入まで完了するカードローンが増えています。来店不要、書類郵送なし、最短即日融資も可能な時代になりました。</p>
+<p>この記事では、Web完結型カードローンの仕組みや、本当に郵送物なしで借りられる条件、申し込みの具体的な流れを詳しく解説します。</p>
+<h3 id="section-1">Web完結型カードローンとは</h3>
+<p>Web完結型カードローンとは、申し込みから契約、借入までのすべての手続きをインターネット上で完了できるサービスです。従来のカードローンでは契約書類の郵送や店舗での手続きが必要でしたが、Web完結型なら自宅にいながらスマホ1台で手続きが完了します。</p>
+<h4>主なメリット</h4>
+<p>Web完結型カードローンには以下のようなメリットがあります。</p>
+<ul>
+<li><strong>24時間いつでも申し込み可能</strong>：深夜や早朝でも、スマホやPCから申し込めます</li>
+<li><strong>郵送物なしで契約完了</strong>：契約書類やカードの郵送がないため、家族に知られにくい</li>
+<li><strong>来店不要</strong>：仕事が忙しい方や、近くに店舗がない方でも利用できます</li>
+<li><strong>審査結果が早い</strong>：最短30分で審査結果がわかるサービスもあります</li>
+</ul>
+<h4>カード発行の有無</h4>
+<p>Web完結型でも、ローンカードの発行方法は選択できることが多いです。カードレス（カード発行なし）を選べば、郵送物を完全になくすことができます。カードがなくても、振込融資やスマホATMで借入・返済が可能です。</p>
+<h3 id="section-2">郵送物なしで借りるための条件</h3>
+<p>「Web完結」と謳っていても、すべてのケースで郵送物がゼロになるわけではありません。以下の条件を確認しましょう。</p>
+<h4>オンライン本人確認（eKYC）への対応</h4>
+<p>郵送物をなくすためには、オンラインで本人確認を完了させる必要があります。スマホで運転免許証やマイナンバーカードを撮影し、顔写真と照合する「eKYC」に対応しているサービスを選びましょう。</p>
+<h4>カードレス契約の選択</h4>
+<p>ローンカードを発行すると、そのカードが自宅に届いてしまいます。完全に郵送物をなくしたい場合は、カードレス契約を選択してください。スマホATMや振込融資で借入・返済ができます。</p>
+<h4>Web明細の登録</h4>
+<p>利用明細を紙で受け取る設定にしていると、毎月明細書が届いてしまいます。契約時にWeb明細（電子明細）を選択することで、郵送物を防げます。</p>
+<h3 id="section-3">Web完結申し込みの流れ</h3>
+<p>実際の申し込みから借入までの流れを確認しましょう。</p>
+<h4>STEP1：公式サイトから申し込み</h4>
+<p>カードローン会社の公式サイトやアプリから申し込みフォームにアクセスし、氏名・住所・勤務先・年収などの必要事項を入力します。入力は10分程度で完了します。</p>
+<h4>STEP2：本人確認書類の提出</h4>
+<p>運転免許証やマイナンバーカードをスマホで撮影してアップロードします。eKYC対応のサービスでは、顔写真との照合も行います。50万円を超える借入や、他社借入と合わせて100万円を超える場合は収入証明書も必要です。</p>
+<h4>STEP3：審査結果の連絡</h4>
+<p>審査は最短30分〜数時間で完了します。結果はメールや電話で連絡があります。在籍確認は、電話ではなく書類で対応してくれるサービスも増えています。</p>
+<h4>STEP4：契約・借入</h4>
+<p>審査通過後、Web上で契約手続きを行います。契約完了後は、即座に指定口座への振込融資やスマホATMでの借入が可能です。</p>
 <h3 id="section-4">まとめ</h3>
-<p>Web完結型のカードローンは、スピーディな申し込みや、書類の郵送が不要といった特徴があり、様々な場面で活用できます。金利水準や審査の早さ、追加書類の有無など、自身のニーズに合ったサービスを選ぶことが重要です。Web上で完結できるカードローンは、今後ますます普及していくものと考えられます。</p>
+<p>Web完結型カードローンを利用すれば、来店不要・郵送物なしでお金を借りることができます。ただし、完全に郵送物をなくすには「eKYC対応」「カードレス契約」「Web明細登録」の3つの条件をすべて満たす必要があります。</p>
+<p>家族に知られずに利用したい方は、申し込み前にこれらの条件を確認し、自分のニーズに合ったサービスを選びましょう。</p>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結型のカードローンの特徴は何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">スピーディな申し込み、書類の郵送不要、自宅や職場から申し込める、などが特徴です。従来のカードローンと比べて手続きが簡単になっています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結型カードローンはどのような場面で活用できますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">急な資金繰りの悪化への対応、来店が難しい人向け、書類の保管が面倒な人向けなど、様々な場面で活用できます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結型カードローンの借入上限額はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">一般的には200万円程度が借入上限額とされています。ただし、各事業者によって条件は異なるので、自身のニーズに合ったサービスを選ぶ必要があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結型カードローンの審査はどのくらい早いですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">申し込みから実際に借りられるまでの平均所要時間は1.5日程度と、スピーディな審査が行われています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結型カードローンには追加書類の提出は必要ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">一部の事業者では、オンラインでの本人確認以外に追加の書類提出を求める場合があるので注意が必要です。完全にペーパーレスではない可能性があります。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結なら本当に郵送物は届きませんか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">eKYC（オンライン本人確認）を利用し、カードレス契約・Web明細を選択すれば、原則として郵送物は届きません。ただし、契約内容や返済状況によっては書類が届く場合もあります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードレスだとどうやってお金を借りますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">振込融資（指定口座への即時振込）か、スマホATM（アプリでQRコードを表示してコンビニATMで出金）で借入できます。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">Web完結でも在籍確認はありますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">在籍確認は原則必要ですが、最近は電話ではなく書類（社会保険証や給与明細）で代替できるサービスも増えています。職場への電話が心配な方は、申し込み前に確認しましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">土日や祝日でも申し込みできますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">Web申し込みは24時間365日可能です。ただし、審査結果の連絡や振込融資の実行は、サービスによって対応時間が異なります。即日融資を希望する場合は、午前中の申し込みがおすすめです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">後からカードを発行することはできますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">多くのサービスでは、契約後にカード発行を申請することも可能です。カードがあるとATMでの利用が便利になりますが、自宅に届くことになるので注意してください。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=Web%E5%AE%8C%E7%B5%90%E3%81%A7%E7%94%B3%E3%81%97%E8%BE%BC%E3%82%81%E3%82%8B%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%EF%BD%9C%E9%83%B5%E9%80%81%E7%89%A9%E3%81%AA%E3%81%97%E3%81%A7%E5%80%9F%E3%82%8A%E3%82%8B%E6%96%B9%E6%B3%95&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -2995,187 +2979,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(26)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

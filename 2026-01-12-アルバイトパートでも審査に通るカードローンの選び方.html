@@ -15,7 +15,8 @@
   
   <title>アルバイト・パートでも審査に通るカードローンの選び方</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,10 +2701,11 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="アルバイト・パートでも審査に通るカードローンの選び方" />
-  <meta property="og:description" content="アルバイト・パートでも審査に通るカードローンで、収入を最大△△%改善できる方法を解説。 アルバイトやパートタイム勤務の方でも、審査に通ってカードローンを利用できる選択肢があります。本記事では、..." />
+  <meta property="og:description" content="アルバイト・パートでもカードローン審査に通るためのポイントを解説。安定収入があれば雇用形態に関係なく申し込み可能です。審査で見られるポイントや選び方のコツを詳しく紹介します。" />
   <meta property="og:url" content="https://example.com/articles/2026-01-12-アルバイトパートでも審査に通るカードローンの選び方/" />
   <meta property="og:site_name" content="ギャランティークリアガイド" />
   <meta property="og:type" content="article" />
@@ -2720,7 +2722,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="アルバイト・パートでも審査に通るカードローンの選び方" />
-  <meta name="twitter:description" content="アルバイト・パートでも審査に通るカードローンで、収入を最大△△%改善できる方法を解説。 アルバイトやパートタイム勤務の方でも、審査に通ってカードローンを利用できる選択肢があります。本記事では、..." />
+  <meta name="twitter:description" content="アルバイト・パートでもカードローン審査に通るためのポイントを解説。安定収入があれば雇用形態に関係なく申し込み可能です。審査で見られるポイントや選び方のコツを詳しく紹介します。" />
   <meta name="twitter:image" content="https://picsum.photos/seed/746034198/1200/630" />
   <meta name="twitter:image:alt" content="アルバイト・パートでも審査に通るカードローンの選び方" />
   <script type="application/ld+json">
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>アルバイト・パートでも審査に通るカードローンの選び方</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:54:11.137Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2943,38 +2920,38 @@
   </ol>
 </nav>
 
-      <p>アルバイト・パートでも審査に通るカードローンで、収入を最大△△%改善できる方法を解説。</p>
-<p>アルバイトやパートタイム勤務の方でも、審査に通ってカードローンを利用できる選択肢があります。本記事では、そういったアルバイト・パート従事者向けのカードローンの選び方について詳しく解説していきます。</p>
-<h3 id="section-1">アルバイト・パート従事者でもカードローンが使える</h3>
-<p>アルバイトやパートタイム勤務の方は、安定収入が得られないことから、一般的にカードローンの審査に通りにくいといわれています。しかし、中には年収要件を緩和したり、勤続年数の条件を緩めたりするカードローンも存在します。</p>
-<p>自身に合ったカードローンを見つけるためには、まずは自分の収入状況や勤続年数などの条件を把握することが重要です。その上で、それらの条件に合ったカードローン商品を探していくことをおすすめします。</p>
-<h3 id="section-2">アルバイト・パート向けカードローンの特徴</h3>
-<p>アルバイト・パート従事者向けのカードローンには、以下のような特徴があります。</p>
-<p>#### 年収要件が低い</p>
-<p>一般的なカードローンでは年収300万円以上が必要とされることが多いですが、アルバイト・パート向けのカードローンでは200万円程度まで年収要件が緩和されている（市場調査, 2024）。</p>
-<p>#### 勤続年数の条件が緩い</p>
-<p>通常のカードローンでは、1年以上の勤続年数が必要とされることが多いですが、アルバイト・パート向けのカードローンでは6か月程度の勤続年数でも審査に通る場合がある（○○銀行調査, 2023）。</p>
-<p>#### 担保が不要</p>
-<p>一般的なカードローンでは、自宅の土地や建物などの担保が必要とされることが多いですが、アルバイト・パート向けのカードローンは無担保で利用できる商品も存在する（△△カード, 2022）。</p>
-<p>このように、アルバイト・パート従事者でも審査に通りやすいカードローンが用意されているのが特徴といえます。</p>
-<h3 id="section-3">アルバイト・パート向けカードローンの選び方</h3>
-<p>アルバイト・パート向けのカードローンを選ぶ際のポイントは以下の通りです。</p>
-<p>#### 自身の収入と勤続年数を確認する</p>
-<p>まずは、自分の年収と勤続年数がどのくらいかを正確に把握しましょう。これらの条件に合ったカードローンを選ぶことが重要です。</p>
-<p>#### 金利と借入限度額を比較する</p>
-<p>金利や借入限度額はカードローン会社によって異なります。自分に合った条件のものを見つけるためには、複数の商品を比較検討することが大切です。</p>
-<p>#### 審査基準を確認する</p>
-<p>アルバイト・パート向けカードローンでも、各社の審査基準は異なります。自分の条件に合った商品を選ぶために、審査の詳細を確認しましょう。</p>
-<p>#### 必要書類を事前に準備する</p>
-<p>カードローンの審査には、収入証明書などの書類が必要になることが多いです。事前に必要書類を確認し、準備しておくと審査がスムーズに進みます。</p>
+      <p>「アルバイトだから審査に通らないのでは...」と諦めていませんか？実は、多くの消費者金融カードローンでは、アルバイトやパートでも申し込みが可能です。</p>
+<p>この記事では、アルバイト・パートの方がカードローン審査に通るためのポイントと、選び方のコツを詳しく解説します。</p>
+<h3 id="section-1">アルバイト・パートでもカードローンは利用できる</h3>
+<p>結論から言うと、アルバイトやパートでもカードローンを利用することは可能です。多くの消費者金融や銀行カードローンでは、申込条件に「安定した収入がある方」と記載されていますが、これは正社員に限定されるわけではありません。</p>
+<p>重要なのは「安定した収入」があるかどうかです。毎月一定の収入があれば、雇用形態に関係なく審査対象となります。ただし、借入限度額は年収に応じて決まるため、正社員と比べて限度額が低くなる傾向があります。</p>
+<h3 id="section-2">審査で見られるポイント</h3>
+<p>アルバイト・パートの方が審査で特に重視されるポイントを理解しておきましょう。</p>
+<h4>毎月の安定収入</h4>
+<p>審査で最も重視されるのは、毎月安定した収入があるかどうかです。週3日以上のシフトで働いており、毎月一定の収入がある方は審査に通りやすい傾向があります。単発バイトや日雇いの場合は、収入が安定していないと判断される可能性があります。</p>
+<h4>勤続期間</h4>
+<p>同じ職場でどのくらい働いているかも重要です。一般的に、同一勤務先で6ヶ月以上働いていると審査で有利になります。転職直後や働き始めたばかりの場合は、もう少し働いてから申し込むのがおすすめです。</p>
+<h4>他社借入状況</h4>
+<p>すでに他のカードローンやキャッシングを利用している場合、その借入残高と件数も審査に影響します。複数の借入がある場合は、審査が厳しくなる可能性があります。</p>
+<h3 id="section-3">カードローンの選び方</h3>
+<p>アルバイト・パートの方がカードローンを選ぶ際のポイントを紹介します。</p>
+<h4>消費者金融がおすすめ</h4>
+<p>アルバイト・パートの方には、銀行カードローンよりも消費者金融がおすすめです。消費者金融は審査スピードが早く、「パート・アルバイトOK」と明記しているところも多いです。また、初回利用者向けの無利息期間があるサービスもあります。</p>
+<h4>借入限度額は控えめに</h4>
+<p>総量規制により、年収の3分の1を超える借入はできません。例えば年収120万円の場合、借入可能額は最大40万円です。最初は必要最低限の希望額で申し込むと、審査に通りやすくなります。</p>
+<h4>在籍確認の方法を確認</h4>
+<p>カードローンの審査では、勤務先への在籍確認が行われます。電話での在籍確認が難しい職場の場合は、書類で対応してくれるサービスを選びましょう。</p>
+<h4>必要書類を準備</h4>
+<p>本人確認書類（運転免許証、マイナンバーカードなど）は必須です。50万円を超える借入の場合は、給与明細や源泉徴収票などの収入証明書も必要になります。</p>
 <h3 id="section-4">まとめ</h3>
-<p>アルバイトやパートタイム勤務の方でも、審査に通ってカードローンを利用できる選択肢があります。自身の収入状況や勤続年数に合わせて、金利や借入限度額を比較しながら、最適なカードローンを見つけることが重要です。必要書類の準備も忘れずに行いましょう。</p>
+<p>アルバイト・パートでも、安定した収入があればカードローンを利用することは可能です。審査に通るためのポイントは、毎月の安定収入があること、同じ職場である程度の勤続期間があること、他社借入が多すぎないことの3点です。</p>
+<p>最初は消費者金融で少額から始め、きちんと返済実績を積むことで、将来的に借入枠を増やすことも可能です。計画的に利用しましょう。</p>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイト・パートでも審査に通るカードローンはありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、年収要件が低いや勤続年数の条件が緩いなど、アルバイト・パート従事者向けのカードローンが存在します。自分の収入状況に合った商品を探すことが重要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイト・パート向けカードローンはどのような特徴がありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">年収要件が低い(200万円程度)、勤続年数の条件が緩い(6か月程度)、担保が不要など、一般的なカードローンよりも条件が緩和されています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイト・パート向けカードローンを選ぶ際のポイントは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">自分の収入と勤続年数を確認し、金利や借入限度額を比較する。また、審査基準を確認し、必要書類も事前に準備しておくことが重要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイト・パート従事者でも審査に通るカードローンはどれくらい収入を改善できますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">記事では収入を最大△△%改善できると述べられていますが、具体的な数値は示されていません。実際の改善率は、利用するカードローンの条件や自身の収支状況によって異なります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイト・パート向けカードローンの年収要件はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">一般的なカードローンでは年収300万円以上が必要とされることが多いですが、アルバイト・パート向けのカードローンでは200万円程度まで年収要件が緩和されています。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイトでも本当にカードローンの審査に通りますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、毎月安定した収入があれば審査対象となります。大手消費者金融では「パート・アルバイトOK」と明記しているところも多いです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">アルバイトだと借入限度額はいくらくらいですか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">総量規制により年収の3分の1が上限です。例えば年収120万円なら最大40万円、年収180万円なら最大60万円となります。初回は10〜30万円程度になることが多いです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">働き始めてすぐでも申し込めますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">申し込み自体は可能ですが、勤続6ヶ月以上あると審査に通りやすくなります。働き始めて間もない場合は、もう少し勤続してから申し込むのがおすすめです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">バイト先に電話がかかってきますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">在籍確認として電話がかかることがありますが、会社名を名乗らず個人名でかけてくれます。最近は書類（社会保険証や給与明細）で在籍確認に代えられるサービスも増えています。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">掛け持ちバイトの場合、収入はどう計算されますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">複数のバイトの収入を合算した年収で審査されます。ただし、申込時に記載する勤務先は1つのみになるため、メインで働いている職場を記載するのが一般的です。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88%E3%83%BB%E3%83%91%E3%83%BC%E3%83%88%E3%81%A7%E3%82%82%E5%AF%A9%E6%9F%BB%E3%81%AB%E9%80%9A%E3%82%8B%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -2993,187 +2970,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(22)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

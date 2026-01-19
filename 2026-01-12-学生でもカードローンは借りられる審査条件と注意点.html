@@ -15,7 +15,8 @@
   
   <title>学生でもカードローンは借りられる？審査条件と注意点</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2720,7 +2722,7 @@
       "@type": "HowToStep",
       "position": 2,
       "name": "ステップ2: カードローンの利用上で失敗しないためには？",
-      "text": "Photo from Lorem Picsum カールさんがカードローンを利用する際には、いくつかの注意点があります。借入金の使途や返済方法など、慎重に検討する必要があります。 借入金の使途を明確に カードローンで借りた資金は、必ず必要な用途に使う必要があります。学費の支払いや生活費、医療費などの支払いに充てる、といった具合です。余剰資金を遊興費に使ったりしてはいけません。 返済能力を把握する カ",
+      "text": "カールさんがカードローンを利用する際には、いくつかの注意点があります。借入金の使途や返済方法など、慎重に検討する必要があります。 借入金の使途を明確に カードローンで借りた資金は、必ず必要な用途に使う必要があります。学費の支払いや生活費、医療費などの支払いに充てる、といった具合です。余剰資金を遊興費に使ったりしてはいけません。 返済能力を把握する カ",
       "image": "https://picsum.photos/seed/2044893208/1200/630"
     },
     {
@@ -2750,7 +2752,7 @@
       "name": "カードローンの利用上で失敗しないためには？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Photo from Lorem Picsum カールさんがカードローンを利用する際には、いくつかの注意点があります。借入金の使途や返済方法など、慎重に検討する必要があります。"
+        "text": "カールさんがカードローンを利用する際には、いくつかの注意点があります。借入金の使途や返済方法など、慎重に検討する必要があります。"
       }
     }
   ]
@@ -2808,7 +2810,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2823,7 +2824,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2842,7 +2842,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2869,7 +2868,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2885,39 +2883,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2928,17 +2908,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>学生でもカードローンは借りられる？審査条件と注意点</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:53:16.664Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2946,7 +2923,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -3031,43 +3008,43 @@
 </nav>
 
       <p>「学生でも借りられるカードローンの審査条件と注意点を解説。手続きを簡単に行い、学生生活の資金調達に役立てよう。」</p>
-<p>大学生のカールさんも、一定の条件を満たせばカードローンを利用することができます。本記事では、カールさんがカードローンを借りる際の審査条件や注意点について解説します。</p>
-<h2 id="section-1">カールさんがカードローンを利用できる条件とは？</h2>
-<p>カールさんがカードローンを申し込むには、一定の条件を満たす必要があります。まず、年齢が満20歳以上であることが条件となります。また、安定した収入源を有していることも重要です。アルバイトの収入や両親からの仕送りなどが対象となります。</p>
+<p>大学生や専門学校生でも、一定の条件を満たせばカードローンを利用することができます。本記事では、学生がカードローンを借りる際の審査条件や注意点について解説します。</p>
+<h2 id="section-1">学生がカードローンを利用できる条件とは？</h2>
+<p>学生がカードローンを申し込むには、主に以下の条件を満たす必要があります。多くのカードローンでは年齢が満20歳以上であることが条件となります（18歳・19歳は申込不可の会社が多い）。また、アルバイトなどで安定した収入があることも重要です。</p>
 <h3 id="section-2">安定した収入が必要</h3>
-<p>カールさんが借りられるカードローンの審査では、安定した収入源の有無が重要なポイントとなります。アルバイト収入や仕送りの平均月収が15万円以上であることが望ましく、アルバイトの勤続年数も2年以上が求められます（株式会社○○調査, 2024）。収入が不安定な場合は、審査に通過しにくい可能性があります。</p>
-<h3 id="section-3">在学証明書の提出が必要</h3>
-<p>カードローン申し込みの際は、カールさんの在学証明書の提出が必要となります。これは、カールさんが現在も大学に在籍していることを証明する書類です。在学証明書がない場合、審査に通過できないため注意が必要です。</p>
+<p>学生がカードローンを利用するためには、安定した収入源が必要です。アルバイトでも問題ありませんが、継続的に働いていることが求められます。なお、仕送りは「収入」としては認められないのが一般的です。</p>
+<h3 id="section-3">必要書類について</h3>
+<p>カードローン申し込みに必要な書類は、本人確認書類（運転免許証、マイナンバーカードなど）です。借入希望額によっては収入証明書（給与明細など）が必要になる場合もあります。在学証明書は通常求められません。</p>
 <h2 id="section-4">カードローンの利用上で失敗しないためには？</h2>
 <figure class="article-image">
   <img src="https://picsum.photos/seed/2044893208/1200/630" alt="カードローンの利用上で失敗しないためには？" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
-<p>カールさんがカードローンを利用する際には、いくつかの注意点があります。借入金の使途や返済方法など、慎重に検討する必要があります。</p>
+<p>学生がカードローンを利用する際には、いくつかの注意点があります。社会人と比べて収入が限られるため、より慎重に検討する必要があります。</p>
 <h3 id="section-5">借入金の使途を明確に</h3>
-<p>カードローンで借りた資金は、必ず必要な用途に使う必要があります。学費の支払いや生活費、医療費などの支払いに充てる、といった具合です。余剰資金を遊興費に使ったりしてはいけません。</p>
+<p>カードローンで借りた資金は、本当に必要な用途に使いましょう。急な出費や一時的な資金不足の解消など、目的を明確にすることが大切です。計画性のない借入れは多重債務につながる危険があります。</p>
 <h3 id="section-6">返済能力を把握する</h3>
-<p>カールさんがカードローンを利用する際は、自身の返済能力を十分に把握しておく必要があります。アルバイトなどの収入が安定しているか、学費や生活費との兼ね合いを検討する必要があります。無理のある返済計画では、返済に苦労する可能性があります。カードローンの返済額は月平均5万円以内に抑えることが推奨されます（株式会社○○調査, 2024）。</p>
+<p>学生がカードローンを利用する際は、自身の返済能力を十分に把握しておく必要があります。アルバイトの収入から学費や生活費を差し引いた「余裕資金」で返済できる金額かどうかを考えましょう。無理のある返済計画は、学業にも影響を及ぼしかねません。</p>
 <h3 id="section-7">複数のカードローンに借りすぎないよう注意</h3>
-<p>カールさんがカードローンを申し込む際は、複数のローン会社に申し込むことが可能です。しかし、それぞれのローン残高を管理できなくなり、返済が滞る可能性があります。1つのカードローンに絞って利用するのが賢明です。</p>
+<p>複数のカードローンを同時に利用すると、それぞれの返済日や残高を管理することが難しくなります。また、短期間に複数社に申し込むと「申込ブラック」と呼ばれる状態になり、審査に通りにくくなることもあります。</p>
 <h3 id="section-8">延滞・滞納に注意</h3>
-<p>カードローンの返済に遅れが生じた場合、延滞や滞納の状態になります。これらは信用情報に記録されるため、今後の借入れに悪影響を及ぼします。返済は確実に行うよう心がけましょう。カードローンの延滞率は3.2%と低い水準にあります（株式会社○○調査, 2024）。</p>
+<p>カードローンの返済に遅れが生じると、遅延損害金が発生するだけでなく、信用情報機関に延滞の記録が残ります。この記録は将来のクレジットカード作成や住宅ローンの審査にも影響するため、絶対に延滞しないよう注意しましょう。</p>
 <h2 id="section-9">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">学生でも年齢要件を満たせばカードローンを借りられるの?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、カードローンを借りるには年齢が満20歳以上が条件となります。ただし、安定した収入源(アルバイトや仕送り)も必要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローン申し込みには在学証明書の提出が必要?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、在学証明書の提出が必須です。これにより、現在も大学に在籍していることを証明する必要があります。在学証明書がない場合は審査に通過できません。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの借入金は何に使うべきですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの借入金は学費の支払いや生活費、医療費などの必要な用途に使うべきです。遊興費など不必要な支出には使ってはいけません。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">学生がカードローンを利用する際の返済額の目安は?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの返済額は月平均5万円以内に抑えることが推奨されます。自身の返済能力を十分に把握し、無理のない返済計画を立てることが重要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">複数のカードローンを利用することは可能ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">複数のカードローンを利用することは可能ですが、返済管理が難しくなる可能性があります。1つのカードローンに絞って利用するのが賢明です。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">学生でもカードローンを借りられますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">20歳以上でアルバイトなどの安定した収入があれば、学生でもカードローンを利用できます。なお、仕送りは収入として認められません。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローン申し込みにはどんな書類が必要?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">本人確認書類（運転免許証、マイナンバーカードなど）が必要です。借入希望額によっては収入証明書（給与明細など）も求められる場合があります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">学生がカードローンを利用する際の注意点は?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">借り過ぎに注意し、返済計画を立ててから利用しましょう。延滞すると信用情報に傷がつき、将来のローンやカード作成に影響します。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">学生の借入可能額はどのくらい?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">消費者金融では総量規制により年収の3分の1が上限です。アルバイト収入が年60万円なら最大20万円となります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">複数のカードローンを利用することは可能ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">可能ですが、複数利用は返済管理が難しくなるためおすすめしません。1社に絞って利用するのが賢明です。</span></div> </div>
 <h2 id="section-10">まとめ</h2>
 <figure class="article-image">
   <img src="https://picsum.photos/seed/166757019/1200/630" alt="まとめ" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
-<p>大学生のカールさんでもカードローンを利用することは可能ですが、一定の条件を満たす必要があります。年齢、収入、在学状況などが審査の対象となります。また、借入金の使途や返済能力、複数のローン利用にも注意が必要です。カールさんがカードローンを上手く活用するには、これらの点に留意することが重要です。</p>
+<p>学生でもカードローンを利用することは可能ですが、20歳以上であること、安定したアルバイト収入があることが条件となります。借り過ぎに注意し、返済計画をしっかり立ててから利用することが大切です。延滞は信用情報に傷をつけるため、絶対に避けましょう。</p>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E5%AD%A6%E7%94%9F%E3%81%A7%E3%82%82%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AF%E5%80%9F%E3%82%8A%E3%82%89%E3%82%8C%E3%82%8B%EF%BC%9F%E5%AF%A9%E6%9F%BB%E6%9D%A1%E4%BB%B6%E3%81%A8%E6%B3%A8%E6%84%8F%E7%82%B9&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3086,187 +3063,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(20)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

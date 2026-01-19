@@ -15,7 +15,8 @@
   
   <title>10万円借りたら返済額はいくら？カードローン返済シミュレーション</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2769,7 +2771,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2784,7 +2785,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2803,7 +2803,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2830,7 +2829,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2846,39 +2844,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2889,17 +2869,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>10万円借りたら返済額はいくら？カードローン返済シミュレーション</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:46:51.374Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2907,7 +2884,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2959,46 +2936,46 @@
   </ol>
 </nav>
 
-      <p>カードローンを10万円借りた場合の返済額を算出できる、簡単な返済シミュレーションをご紹介します。</p>
-<p>カードローンを利用する際、返済額を事前に知ることは重要です。本記事では、10万円のカードローンを借りた場合の返済額をシミュレーションし、返済計画を立てる上で役立つ情報をご紹介します。</p>
-<h3 id="section-1">カードローンとは</h3>
-<p>カードローンとは、必要な時に必要な金額を借りられる融資サービスです。利用限度額の範囲内で随時借り入れができ、返済も自由に行えるのが特徴です。申し込みから最短で即日融資を受けられるため、急な出費にも対応できます。</p>
-<h3 id="section-2">10万円のカードローンを借りた場合の返済額</h3>
-<p>10万円のカードローンを借りた場合、返済額はどのようになるでしょうか。金利や返済期間などによって変わってきます。代表的な条件別の返済額を見ていきましょう。</p>
-<p>#### 金利6.0%の場合</p>
+      <p>「10万円借りたら毎月いくら返すの？」「利息は全部でいくらになる？」カードローンを検討する際、最も気になるのが返済額ではないでしょうか。この記事では、10万円を借りた場合の具体的な返済シミュレーションを紹介します。</p>
+<h3 id="section-1">10万円借りた場合の返済シミュレーション</h3>
+<p>カードローンの金利は年3.0%〜18.0%程度ですが、初めて借りる場合は上限金利（18%前後）が適用されることが多いです。現実的な金利で計算してみましょう。</p>
+<h4>金利18.0%の場合（消費者金融の上限金利）</h4>
 <ul>
-<li>返済期間1年: 月々8,611円、合計103,332円</li>
-<li>返済期間2年: 月々4,464円、合計107,136円</li>
-<li>返済期間3年: 月々3,102円、合計111,672円</li>
+<li>1年で返済：月々9,168円 × 12回 = 総額110,016円（利息10,016円）</li>
+<li>2年で返済：月々4,992円 × 24回 = 総額119,808円（利息19,808円）</li>
+<li>3年で返済：月々3,615円 × 36回 = 総額130,140円（利息30,140円）</li>
 </ul>
-<p>#### 金利8.0%の場合</p>
+<h4>金利15.0%の場合（銀行カードローンの上限金利）</h4>
 <ul>
-<li>返済期間1年: 月々8,752円、合計105,024円</li>
-<li>返済期間2年: 月々4,570円、合計109,680円</li>
-<li>返済期間3年: 月々3,188円、合計114,768円</li>
+<li>1年で返済：月々9,026円 × 12回 = 総額108,312円（利息8,312円）</li>
+<li>2年で返済：月々4,849円 × 24回 = 総額116,376円（利息16,376円）</li>
+<li>3年で返済：月々3,467円 × 36回 = 総額124,812円（利息24,812円）</li>
 </ul>
-<p>#### 金利10.0%の場合</p>
-<ul>
-<li>返済期間1年: 月々8,895円、合計106,740円</li>
-<li>返済期間2年: 月々4,679円、合計112,296円</li>
-<li>返済期間3年: 月々3,276円、合計117,936円</li>
-</ul>
-<h3 id="section-3">返済額を抑えるためのポイント</h3>
-<p>カードローンの返済額を抑えるには、以下のようなポイントに気をつける必要があります。</p>
-<p>#### 金利の低いカードローンを選ぶ</p>
-<p>同じ10万円を借りる場合でも、金利の違いによって返済額は大きく変わってきます。できるだけ金利の低いカードローンを選ぶことが大切です。</p>
-<p>#### 返済期間を長くする</p>
-<p>返済期間を長くすれば、月々の返済額は抑えられます。ただし、金利負担が増えるため、返済総額は高くなります。自分の返済能力に合わせて、最適な返済期間を検討しましょう。</p>
-<p>#### 早期返済を心がける</p>
-<p>返済期間を短くすれば、金利負担を抑えられるため、返済総額を抑えられます。余裕がある場合は、早期返済を心がけるのがよいでしょう。</p>
+<h3 id="section-2">利息を抑えるコツ</h3>
+<p>同じ10万円を借りても、返済方法次第で利息は大きく変わります。</p>
+<h4>無利息期間を活用する</h4>
+<p>プロミスやアイフルなど大手消費者金融は「初回30日間無利息」サービスがあります。30日以内に完済すれば利息ゼロで借りられます。</p>
+<h4>繰上返済を活用する</h4>
+<p>毎月の返済額に加えて、余裕があるときに追加で返済すると、元金が早く減り利息も抑えられます。</p>
+<h4>短期間で返す</h4>
+<p>上のシミュレーションを見ると、3年返済は1年返済と比べて利息が約3倍になります。無理のない範囲で返済期間を短くしましょう。</p>
+<h3 id="section-3">10万円の借入に必要な条件</h3>
+<p>10万円程度の借入なら、収入証明書は原則不要です。本人確認書類（運転免許証など）があれば申し込めます。安定した収入があれば、パートやアルバイトの方でも審査に通る可能性があります。</p>
 <h3 id="section-4">まとめ</h3>
-<p>カードローンは、急な出費に備えるための便利な金融サービスです。10万円を借りた場合の返済額は、金利や返済期間によって大きく変わってきます。自分の返済能力に合わせて、最適な条件を選ぶことが重要です。本記事で紹介した内容を参考に、無理のない返済計画を立てましょう。</p>
+<p>10万円を金利18%で借りた場合、1年返済なら利息は約1万円、3年返済なら約3万円になります。「借りる前に返済計画を立てる」「無利息期間を活用する」「できるだけ早く返す」この3つを意識すれば、利息を最小限に抑えられます。</p>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">10万円のカードローンの返済額はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">返済額は金利や返済期間によって異なり、金利6%の場合、1年払いなら月8,611円、2年払いなら月4,464円、3年払いなら月3,102円となります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの金利が高いと返済額は高くなりますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、金利が高いほど返済額は増加します。例えば10万円を3年間返済する場合、金利6%なら月3,102円、金利10%なら月3,276円となります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">返済期間を長くすると返済額は下がりますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、返済期間を長くすると月々の返済額は下がります。ただし、金利負担が増えるため返済総額は高くなります。返済能力に合わせて最適な期間を選ぶ必要があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの早期返済は有効ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、早期返済を行えば金利負担を抑えられるため、返済総額を抑えられます。余裕がある場合は早期返済を心がけましょう。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">金利の低いカードローンを選ぶことが重要ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、同じ10万円を借りても金利の違いによって返済額は大きく変わります。できるだけ金利の低いカードローンを選ぶことが大切です。</span></div> </div></p>
+<div class="qa-box">
+  <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">10万円を30日間だけ借りたら利息はいくら？</span></div>
+  <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">金利18%の場合、約1,479円です。無利息期間があるカードローンを選べば0円で借りられます。</span></div>
+</div>
+<div class="qa-box">
+  <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">毎月の最低返済額はいくら？</span></div>
+  <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローン会社によりますが、10万円借入なら月々4,000円〜5,000円程度が最低返済額の目安です。ただし最低額だけ返していると返済期間が長くなり、利息が増えます。</span></div>
+</div>
+<div class="qa-box">
+  <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">10万円借りるのに審査は厳しい？</span></div>
+  <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">10万円は少額なので、安定した収入があれば審査に通りやすい金額です。パートやアルバイトでも申込可能です。</span></div>
+</div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=10%E4%B8%87%E5%86%86%E5%80%9F%E3%82%8A%E3%81%9F%E3%82%89%E8%BF%94%E6%B8%88%E9%A1%8D%E3%81%AF%E3%81%84%E3%81%8F%E3%82%89%EF%BC%9F%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E8%BF%94%E6%B8%88%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3017,181 +2994,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(10)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

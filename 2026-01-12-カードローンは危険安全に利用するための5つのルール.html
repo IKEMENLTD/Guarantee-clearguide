@@ -15,7 +15,8 @@
   
   <title>カードローンは危険？安全に利用するための5つのルール</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="カードローンは危険？安全に利用するための5つのルール" />
   <meta property="og:description" content="カードローンの危険性を減らし、安全に利用するための5つの有効なルールをご紹介します。 カードローンは便利な金融サービスの一つですが、適切に利用しないと財務状況を悪化させてしまう可能性があります。本記事では、カードローンの危険性と、..." />
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンは危険？安全に利用するための5つのルール</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:44:08.181Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2941,27 +2918,27 @@
       <p>カードローンの危険性を減らし、安全に利用するための5つの有効なルールをご紹介します。</p>
 <p>カードローンは便利な金融サービスの一つですが、適切に利用しないと財務状況を悪化させてしまう可能性があります。本記事では、カードローンの危険性と、安全に利用するための5つのルールについて解説します。</p>
 <h3 id="section-1">カードローンの危険性</h3>
-<p>カードローンは簡単に借りられるため、借りすぎてしまう危険性があります。返済に困難を来たすと、延滞や自己破産などの深刻な問題につながる可能性があります。また、日本のカードローン市場は2024年に約3兆円規模に達すると予想されており（〜〜（○○調査, 2024））、高金利のカードローンを利用すると、元本以上の金利を支払い続けることになり、借金が増大してしまうのです。</p>
+<p>カードローンは手軽に利用できる反面、使い方を誤ると借金が膨らんでしまう危険性があります。返済が困難になると、遅延損害金の発生、信用情報への影響、最悪の場合は債務整理や自己破産に至る可能性もあります。安全に利用するためのルールを知っておきましょう。</p>
 <h3 id="section-2">安全に利用するための5つのルール</h3>
 <p>カードローンを上手に活用するには、以下のようなルールを守ることが重要です。</p>
-<p>#### 1. 返済能力を見極める</p>
-<p>カードローンを利用する前に、自分の返済能力を正確に把握しましょう。月々の返済額が無理なく返せるかどうかを慎重に検討する必要があります。日本のカードローン利用者の約70%が返済に不安を感じているという調査結果があります（〜〜（○○調査, 2024））。</p>
-<p>#### 2. 借入額を抑える</p>
-<p>借入額は必要最小限に抑えることが大切です。借りすぎると返済が困難になる可能性が高くなります。カードローンの平均借入額は約80万円です（〜〜（○○調査, 2024））。</p>
-<p>#### 3. 利息を抑える</p>
-<p>可能な限り低金利のカードローンを選択しましょう。高金利のカードローンを利用すると、利息の支払いが大きな負担になります。低金利のカードローンを利用する企業の95%が効果を実感しているという調査結果があります（〜〜（○○調査, 2024））。</p>
-<p>#### 4. 返済期限を守る</p>
-<p>返済期限を守ることは非常に重要です。遅延すると延滞料や延滞金の支払いが発生し、さらに悪化する可能性があります。返済期限を守ることで平均して2時間の事務作業が削減できるという調査結果があります（〜〜（○○調査, 2024））。</p>
-<p>#### 5. 利用目的を明確にする</p>
-<p>カードローンは緊急時の資金確保などに利用するものです。不要な消費資金として利用するのは避けましょう。カードローンの利用目的が明確な企業の80%が効果を実感しているという調査結果があります（〜〜（○○調査, 2024））。</p>
+<h4>1. 返済能力を見極める</h4>
+<p>カードローンを利用する前に、自分の返済能力を正確に把握しましょう。毎月の手取り収入から固定費を差し引いた金額で、無理なく返済できるかどうかを計算することが大切です。</p>
+<h4>2. 借入額を必要最小限に</h4>
+<p>「借りられる額」と「借りるべき額」は違います。必要な金額だけを借り、余計な借入れは避けましょう。限度額いっぱいまで借りることは絶対にやめましょう。</p>
+<h4>3. 金利と利息を意識する</h4>
+<p>金利が高いほど返済総額は増えます。複数のカードローンを比較し、できるだけ低金利のものを選びましょう。消費者金融の無利息サービスを短期間で活用するのも一つの方法です。</p>
+<h4>4. 返済期限を守る</h4>
+<p>返済期限を守ることは非常に重要です。遅延すると遅延損害金（年率20%まで）が発生し、信用情報にも記録されます。口座引落しやアプリの通知機能を活用して、うっかり忘れを防ぎましょう。</p>
+<h4>5. 複数社からの借入れを避ける</h4>
+<p>複数のカードローンを同時に利用すると、返済管理が複雑になり、借入総額も把握しづらくなります。1社に絞って計画的に利用することをおすすめします。</p>
 <h3 id="section-3">まとめ</h3>
 <p>カードローンは便利な金融サービスですが、適切に利用しないと深刻な問題につながる可能性があります。返済能力を見極め、借入額を抑え、低金利のカードローンを選び、返済期限を守り、明確な利用目的を持つことが重要です。これらのルールを守ることで、カードローンを安全に活用できるでしょう。</p>
 <h2 id="section-4">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">なぜカードローンは危険なのでしょうか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンは簡単に借りられるため、借りすぎてしまう危険性があります。返済に困難を来たすと、深刻な問題につながる可能性があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンを安全に利用するためのルールは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">1. 返済能力を見極める 2. 借入額を抑える 3. 低金利のカードローンを選ぶ 4. 返済期限を守る 5. 明確な利用目的を持つ</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの平均借入額はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの平均借入額は約80万円です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">低金利のカードローンを利用する企業の効果はどうですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">低金利のカードローンを利用する企業の95%が効果を実感しているという調査結果があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">返済期限を守ることで得られる効果はありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">返済期限を守ることで平均して2時間の事務作業が削減できるという調査結果があります。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンは本当に危険ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローン自体が危険というわけではありません。計画的に利用すれば便利な金融サービスです。ただし、借りすぎや返済遅延には注意が必要です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンを安全に利用するポイントは?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">返済能力の範囲内で借りること、必要最小限の金額に抑えること、返済期限を守ることが重要です。複数社からの借入れは避けましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">返済が遅れるとどうなりますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">遅延損害金（年率最大20%）が発生し、信用情報機関に延滞の記録が残ります。将来のローンやカード審査に影響する可能性があります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">借りすぎを防ぐにはどうすればいい?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">借りる前に返済シミュレーションを行い、毎月の返済額を確認しましょう。限度額いっぱいまで借りず、必要な金額だけを借りることが大切です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">金利を抑えるコツはありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">複数のカードローンを比較して低金利のものを選ぶこと、繰上返済を積極的に行うことで利息を節約できます。消費者金融の無利息サービスも活用できます。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AF%E5%8D%B1%E9%99%BA%EF%BC%9F%E5%AE%89%E5%85%A8%E3%81%AB%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE5%E3%81%A4%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -2980,176 +2957,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(5)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

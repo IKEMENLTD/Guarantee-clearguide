@@ -15,7 +15,8 @@
   
   <title>カードローンの一括返済はお得？メリットと手続き方法</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2714,13 +2716,13 @@
       "@type": "HowToStep",
       "position": 1,
       "name": "ステップ1: なぜカードローンの一括返済が効果的なのか？",
-      "text": "金利の削減 カードローンの一括返済を行うことで、その後の利息の支払いを抑えることができます。長期的な返済を行う場合、毎月の利息負担が大きくなる可能性があるため、一括返済によって金利を削減できるのは大きなメリットといえるでしょう（平均金利削減額は3.2%）（日本消費者金融協会, 2023）。 返済期間の短縮 一括返済を行えば、当初の返済期間を大幅に短縮することができます。返済期間が長期化すれば、金利"
+      "text": "一括返済のメリットは大きく3つ。1つ目は利息の削減。例えば50万円を年18%で借りている場合、残り1年で約9万円の利息節約に。2つ目は信用情報の改善。完済実績は今後の審査でプラスに働きます。3つ目は精神的な負担の軽減です。"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "ステップ2: カードローンの一括返済で失敗しないためには？",
-      "text": "Photo from Lorem Picsum 一時的な現金流出 一括返済を行うには、まとまった金額を準備する必要があります。このため、一時的な現金流出が発生するのが難点といえます。そのため、余裕資金の確保が重要となります（一括返済時の平均現金流出額は82万円）（金融庁調査, 2023）。 解約手数料の発生 一部のカードローン会社では、一括返済時に解約手数料を課す場合があります。事前に手数料の有無",
+      "text": "一括返済の注意点は、生活防衛資金を確保した上で行うこと。また、一部の商品では早期完済違約金が設定されている場合があるため、事前に確認しましょう。",
       "image": "https://picsum.photos/seed/1410012177/1200/630"
     },
     {
@@ -2733,7 +2735,7 @@
       "@type": "HowToStep",
       "position": 4,
       "name": "ステップ4: よくある質問",
-      "text": "Photo from Lorem Picsum Q なぜカードローンの一括返済が効果的なのか? <span class=\"qa-lab",
+      "text": "Q なぜカードローンの一括返済が効果的なのか? <span class=\"qa-lab",
       "image": "https://picsum.photos/seed/253199824/1200/630"
     }
   ]
@@ -2749,7 +2751,7 @@
       "name": "カードローンの一括返済で失敗しないためには？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Photo from Lorem Picsum"
+        "text": ""
       }
     }
   ]
@@ -2807,7 +2809,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2822,7 +2823,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2841,7 +2841,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2868,7 +2867,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2884,39 +2882,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2927,17 +2907,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンの一括返済はお得？メリットと手続き方法</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:54:40.748Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2945,7 +2922,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -3055,24 +3032,24 @@
 <p>カードローンの借入れ金額を一括で返済することは、長期的な返済計画を立てるうえで重要な選択肢の1つです。一括返済にはさまざまな利点がありますが、状況によってはデメリットも存在するため、慎重に検討する必要があります。本記事では、カードローンの一括返済におけるメリットや手続き方法について詳しく解説します。</p>
 <h2 id="section-1">なぜカードローンの一括返済が効果的なのか？</h2>
 <h3 id="section-2">金利の削減</h3>
-<p>カードローンの一括返済を行うことで、その後の利息の支払いを抑えることができます。長期的な返済を行う場合、毎月の利息負担が大きくなる可能性があるため、一括返済によって金利を削減できるのは大きなメリットといえるでしょう（平均金利削減額は3.2%）（日本消費者金融協会, 2023）。</p>
+<p>カードローンの一括返済を行うことで、その後の利息の支払いを抑えることができます。例えば50万円を年18%で借りている場合、月々の利息は約7,500円。残り返済期間が1年あれば、一括返済することで約9万円の利息を節約できる計算です。</p>
 <h3 id="section-3">返済期間の短縮</h3>
-<p>一括返済を行えば、当初の返済期間を大幅に短縮することができます。返済期間が長期化すれば、金利負担も増大するため、返済期間を短縮することで、ローン全体の支払い額を抑えることができます（返済期間が2年短縮された場合、支払額は平均20%削減）（消費者金融市場調査, 2022）。</p>
+<p>一括返済を行えば、当初の返済期間を大幅に短縮できます。カードローンは返済期間が長引くほど利息が膨らむ仕組みのため、早期の完済は総支払額の削減に直結します。繰り上げ返済で元金を減らすだけでも効果的です。</p>
 <h3 id="section-4">信用力の向上</h3>
-<p>カードローンの残高が減少すれば、個人の信用力も向上します。信用力が高まれば、今後の借入れや投資などにも有利に働く可能性があります（信用力が向上した人の65%が、より有利な条件で借入れができるようになった）（金融機関顧客調査, 2021）。</p>
+<p>カードローンの残高が減少または完済されると、信用情報にもプラスに働きます。他社のローンやクレジットカードの審査で「借入残高」は重要な判断材料となるため、完済実績は今後の金融取引で有利になる可能性があります。</p>
 <h3 id="section-5">ストレスの軽減</h3>
-<p>毎月の返済に追われることなく、一括返済を行えば、心理的なストレスも軽減されます。返済に関する心配を減らすことで、生活の質の向上にもつながるでしょう（一括返済者の80%が「精神的に楽になった」と回答）（消費者アンケート, 2022）。</p>
+<p>毎月の返済日を気にしなくて済むようになるのは、精神的にも大きなメリットです。返済に追われる生活から解放されることで、将来の貯蓄や資産形成に意識を向けられるようになります。</p>
 <h2 id="section-6">カードローンの一括返済で失敗しないためには？</h2>
 <figure class="article-image">
   <img src="https://picsum.photos/seed/1410012177/1200/630" alt="カードローンの一括返済で失敗しないためには？" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
 <h3 id="section-7">一時的な現金流出</h3>
-<p>一括返済を行うには、まとまった金額を準備する必要があります。このため、一時的な現金流出が発生するのが難点といえます。そのため、余裕資金の確保が重要となります（一括返済時の平均現金流出額は82万円）（金融庁調査, 2023）。</p>
+<p>一括返済を行うには、残高分のまとまった資金を準備する必要があります。生活防衛資金（3〜6ヶ月分の生活費）は確保した上で、余裕資金から一括返済に充てるのが基本です。無理な一括返済で生活が苦しくなっては本末転倒です。</p>
 <h3 id="section-8">解約手数料の発生</h3>
-<p>一部のカードローン会社では、一括返済時に解約手数料を課す場合があります。事前に手数料の有無を確認し、コストを考慮する必要があります（解約手数料が発生するカードローンは全体の25%）（日本クレジット協会, 2022）。</p>
+<p>多くのカードローンでは一括返済や繰り上げ返済に手数料はかかりませんが、一部の商品では「早期完済違約金」が設定されている場合があります。事前にカードローン会社に確認しておきましょう。</p>
 <h3 id="section-9">繰り上げ返済のメリットの判断</h3>
 <p>一括返済を行えば、確実に金利の削減効果が得られますが、場合によっては、繰り上げ返済のほうが有利になる可能性もあります。自身の状況を十分に検討し、最適な返済方法を選択することが重要です。</p>
 <h2 id="section-10">カードローンの一括返済の手続きとは？</h2>
@@ -3086,7 +3063,7 @@
 <figure class="article-image">
   <img src="https://picsum.photos/seed/253199824/1200/630" alt="よくある質問" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
 <p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">なぜカードローンの一括返済が効果的なのか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">金利の削減、返済期間の短縮、信用力の向上、ストレスの軽減など、様々なメリットがあるため効果的です。</span></div> </div></p>
@@ -3112,187 +3089,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(23)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

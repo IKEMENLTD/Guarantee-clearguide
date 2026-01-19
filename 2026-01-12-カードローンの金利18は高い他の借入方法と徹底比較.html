@@ -15,7 +15,8 @@
   
   <title>カードローンの金利18%は高い？他の借入方法と徹底比較</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2711,7 +2713,7 @@
       "name": "カードローンの金利とは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "カードローンの金利は一般的に年利18%前後となっています。この金利水準は他の借入方法と比べると高い部類に入ります。一方で、カードローンはスピーディーな借入と返済が可能という特徴があります。 #### 金利の決まり方 カードローンの金利は、各金融機関が独自に設定しています。審査の結果や信用情報に基づいて、個人ごとに異なる金利が適用されます。審査では、年収や職業、返済能力などが大きな要因となります。 #### 金利の上限 カードローンの金利には法律で定められた上限があり、年利20%が上限となっています。ただし、一部の金融機関では金利が18%前後と少し低めに設定されているケースもあります（日本クレジ"
+        "text": "カードローンの金利は上限が年18%前後に設定されることが多いです。利息制限法により、10万円未満は年20%、10〜100万円は年18%、100万円以上は年15%が上限。消費者金融は年18%、銀行は年14.5%前後が目安です。"
       }
     }
   ]
@@ -2769,7 +2771,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2784,7 +2785,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2803,7 +2803,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2830,7 +2829,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2846,39 +2844,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2889,17 +2869,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンの金利18%は高い？他の借入方法と徹底比較</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T07:00:59.466Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2907,7 +2884,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2962,19 +2939,19 @@
       <p>カードローン金利18%は高すぎる?他の借入方法と徹底比較でお得な選択肢を紹介。</p>
 <p>カードローンの金利が年利18%と高いことは良く知られています。しかし、他の借入方法と比較するとどうなのでしょうか。この記事では、カードローンの金利について詳しく解説し、他の借入方法との比較を行います。</p>
 <h3 id="section-1">カードローンの金利とは</h3>
-<p>カードローンの金利は一般的に年利18%前後となっています。この金利水準は他の借入方法と比べると高い部類に入ります。一方で、カードローンはスピーディーな借入と返済が可能という特徴があります。</p>
-<p>#### 金利の決まり方</p>
-<p>カードローンの金利は、各金融機関が独自に設定しています。審査の結果や信用情報に基づいて、個人ごとに異なる金利が適用されます。審査では、年収や職業、返済能力などが大きな要因となります。</p>
-<p>#### 金利の上限</p>
-<p>カードローンの金利には法律で定められた上限があり、年利20%が上限となっています。ただし、一部の金融機関では金利が18%前後と少し低めに設定されているケースもあります（日本クレジット協会調査, 2024）。</p>
+<p>カードローンの金利は上限金利が年18.0%前後に設定されていることが多いです。この金利水準は住宅ローンや自動車ローンと比べると高いですが、担保・保証人不要で審査も早いというメリットがあります。</p>
+<h4>金利の決まり方</h4>
+<p>カードローンの金利は、限度額に応じて変わります。限度額が低いほど金利は高く（上限金利が適用）、限度額が高いほど金利は低くなります。初回契約では上限金利（年14.5〜18.0%）が適用されるケースがほとんどです。</p>
+<h4>金利の上限</h4>
+<p>利息制限法により、借入額に応じた上限金利が定められています。10万円未満は年20%、10〜100万円未満は年18%、100万円以上は年15%が上限です。消費者金融は年18.0%、銀行カードローンは年14.5%前後が上限金利の目安となります。</p>
 <h3 id="section-2">他の借入方法との比較</h3>
-<p>カードローンの金利が高いのは事実ですが、他の借入方法と比べてどうなのでしょうか。ここでは主な借入方法をいくつか取り上げて比較します。</p>
-<p>#### 銀行のプロパーローン</p>
-<p>銀行のプロパーローンは、カードローンと比べると金利が低めに設定されています。一般的な金利水準は年利3~10%程度です（日本銀行金融機構調査, 2024）。 ただし、審査が厳しく、手続きにも時間がかかるのが特徴です。</p>
-<p>#### 信用金庫・労金のローン</p>
-<p>信用金庫や労金のローンも、カードローンよりは金利が低めに設定されています。一般的な金利水準は年利4~12%程度です（全国信用金庫協会調査, 2024）。 銀行のプロパーローンほど厳しい審査ではありませんが、手続きにはある程度の時間がかかります。</p>
-<p>#### 消費者金融のローン</p>
-<p>消費者金融のローンは、カードローンと同じくらいの金利水準となっています。一般的な金利水準は年利15~25%程度です（日本貸金業協会調査, 2024）。 審査は比較的緩めで、申し込みからすぐに借入が可能という特徴があります。</p>
+<p>カードローンの金利は高めですが、それぞれの借入方法には特徴があります。目的や状況に応じた使い分けが重要です。</p>
+<h4>銀行のフリーローン</h4>
+<p>銀行のフリーローンは年3〜14%程度と金利が低めです。ただし、用途や返済計画の審査が厳しく、申込から融資まで1〜2週間かかることもあります。急ぎでない場合は検討の価値があります。</p>
+<h4>信用金庫・ろうきんのローン</h4>
+<p>信用金庫やろうきん（労働金庫）のローンは年5〜10%程度と低金利です。会員や組合員であればさらに優遇されることも。ただし、取引実績や勤務先の条件がある場合もあります。</p>
+<h4>消費者金融のカードローン</h4>
+<p>消費者金融の上限金利は年18.0%程度で銀行より高めですが、審査が早く最短30分〜即日融資が可能です。大手では30日間無利息サービスもあり、短期の借入ならお得になるケースもあります。</p>
 <h3 id="section-3">状況に合わせて借入方法を選択</h3>
 <p>以上のように、カードローンの金利は他の借入方法と比べて高い部類に入ります。 ただし、借入時の速さや審査の厳しさなど、それぞれの特徴も異なります。</p>
 <p>借入の目的や状況に合わせて、最適な借入方法を選択するのがよいでしょう。 例えば、緊急の資金needs があれば、スピーディーなカードローンがおすすめです。一方で、大きな金額を借りたい場合は、金利の低い銀行のプロパーローンを検討するのがよいかもしれません。</p>
@@ -2985,11 +2962,11 @@
 <li>状況に合わせて、最適な借入方法を選ぶことが重要</li>
 </ul>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの金利18%は本当に高いのですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの金利は一般的に年利18%前後と高い部類に入りますが、他の借入方法と比べると適切な水準といえます。緊急時の資金ニーズには適していますが、大きな金額を借りる場合は銀行のプロパーローンなどを検討することをおすすめします。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの金利はどのように決まるのですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの金利は、各金融機関が個人の審査結果や信用情報に基づいて独自に設定しています。年収や職業、返済能力などが大きな要因となります。また、法律で定められた上限金利が年利20%となっています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローン以外の借入方法にはどのようなものがありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローン以外の主な借入方法には、銀行のプロパーローン(年利3~10%)、信用金庫・労金のローン(年利4~12%)、消費者金融のローン(年利15~25%)などがあります。それぞれ金利水準や審査の厳しさ、申込の速さが異なるため、目的に合わせて適切な方法を選択することが重要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンはスピーディーな借入が可能なのですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、カードローンは申込から借入までスピーディーに行えるのが特徴です。他の借入方法と比べて、手続きが簡単で即日借入が可能なことから、緊急の資金ニーズにも対応しやすいです。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの金利は法律で定められた上限はありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、カードローンの金利には年利20%が法律で定められた上限となっています。ただし、一部の金融機関では18%前後と少し低めの金利設定をしているケースもあります。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの金利18%は高い？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">住宅ローン（年0.5〜2%）や自動車ローン（年2〜5%）と比べると高いですが、無担保・保証人不要で即日借入可能という利便性を考えると妥当な水準です。短期間で完済できるなら利息負担も抑えられます。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">金利を下げる方法はある？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">限度額の増額を申請して認められると金利が下がるケースがあります。また、銀行カードローンは上限金利が年14.5%前後と消費者金融より低いため、審査に通るなら切り替えも選択肢です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">銀行ローンとカードローンどちらがお得？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">金利だけ見れば銀行のフリーローンの方が低いですが、審査に1〜2週間かかることも。急ぎの場合は即日融資可能なカードローンが便利です。借入目的や緊急度で使い分けましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">利息を減らすコツは？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">借入期間を短くすることが最も効果的です。毎月の返済額を増やす、繰り上げ返済を活用するなどで総利息を大幅に減らせます。また、30日間無利息サービスのある消費者金融なら短期借入が有利です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">利息制限法の上限金利とは？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">借入額に応じて上限金利が定められています。10万円未満は年20%、10〜100万円未満は年18%、100万円以上は年15%が法律上の上限です。これを超える金利は違法となります。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E9%87%91%E5%88%A918%25%E3%81%AF%E9%AB%98%E3%81%84%EF%BC%9F%E4%BB%96%E3%81%AE%E5%80%9F%E5%85%A5%E6%96%B9%E6%B3%95%E3%81%A8%E5%BE%B9%E5%BA%95%E6%AF%94%E8%BC%83&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3008,187 +2985,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(35)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -15,7 +15,8 @@
   
   <title>無職でも借りられる？カードローン審査の収入基準を解説</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2711,7 +2713,7 @@
       "name": "カードローンの収入基準とは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "カードローンを利用するには、一定の収入水準を満たす必要があります。これが「収入基準」と呼ばれるものです。収入基準は、カード会社によって異なりますが、一般的には以下のような基準が設けられています。 #### 正社員の場合 年収300万円以上 勤続年数が1年以上 #### アルバイト・パートの場合 年収250万円以上 勤続年数が1年以上 #### 無職の場合 年金・佐藤さんの収入などで月10万円以上の収入がある このように、安定した収入がなければカードローンの審査に通過することは難しいのが一般的です。ただし、これはあくまでも目安であり、個人の事情によって判断が変わる可能性があります。"
+        "text": "カードローンを利用するには、安定した収入が求められます。正社員・契約社員は勤続年数が半年〜1年以上あれば申込可能な場合が多いです。アルバイト・パートでも継続的な収入があれば利用できる商品もあります。ただし、収入のない無職の方は総量規制の関係から審査に通ることは難しいのが一般的です。"
       }
     }
   ]
@@ -2769,7 +2771,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2784,7 +2785,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2803,7 +2803,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2830,7 +2829,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2846,39 +2844,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2889,17 +2869,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>無職でも借りられる？カードローン審査の収入基準を解説</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:49:36.552Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2907,7 +2884,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2962,41 +2939,38 @@
       <p>無職でもカードローンの審査に通る方法を解説。収入基準を詳しく解明し、借入に役立つ情報をお伝えします。</p>
 <p>無職でもカードローンを借りることは可能なのか、気になっている人も多いでしょう。この記事では、無職の方でもカードローン審査に合格する方法や、収入基準について詳しく解説します。</p>
 <h3 id="section-1">カードローンの収入基準とは？</h3>
-<p>カードローンを利用するには、一定の収入水準を満たす必要があります。これが「収入基準」と呼ばれるものです。収入基準は、カード会社によって異なりますが、一般的には以下のような基準が設けられています。</p>
-<p>#### 正社員の場合</p>
-<ul>
-<li>年収300万円以上</li>
-<li>勤続年数が1年以上</li>
-</ul>
-<p>#### アルバイト・パートの場合</p>
-<ul>
-<li>年収250万円以上</li>
-<li>勤続年数が1年以上</li>
-</ul>
-<p>#### 無職の場合</p>
-<ul>
-<li>年金・佐藤さんの収入などで月10万円以上の収入がある</li>
-</ul>
-<p>このように、安定した収入がなければカードローンの審査に通過することは難しいのが一般的です。ただし、これはあくまでも目安であり、個人の事情によって判断が変わる可能性があります。</p>
-<h3 id="section-2">無職でもカードローンを借りる方法</h3>
-<p>無職の方でも、一定の条件を満たせば、カードローンを利用することができます。具体的な方法は以下の通りです。</p>
-<p>#### 年金・佐藤さんの収入を活用する 無職の場合、自身の収入がなくても、年金や佐藤さんの収入（月平均15万円）を証明できれば、カードローンの審査に通過する可能性があります。年金証書や佐藤さんの源泉徴収票などを提出することで、安定した収入があると認められる可能性が高くなります。</p>
-<p>#### 田中さんを連帯保証人に立てる カードローンの申し込みの際に、年収500万円以上の田中さんを連帯保証人に立てることで、無職でも審査に通過しやすくなります。田中さんには、安定した収入がある必要があります。田中さんの収入が審査の対象となるため、無職でも借りられるチャンスが広がります。</p>
-<p>#### 不動産を担保に提供する カードローンの申し込みの際に、自宅（時価3,000万円）を担保に提供することで、無職でも借りられる可能性が高くなります。担保を提供することで、カード会社の貸し倒れリスクが軽減されるため、無職でも融資を受けられる場合があります。</p>
-<h3 id="section-3">カードローンの審査では何が重視されるのか</h3>
-<p>カードローンの審査では、単なる収入基準だけでなく、以下のような要素も重視されます。</p>
-<p>#### 信用情報 佐藤さんの過去の借入履歴や返済状況、延滞歴（過去5年間の延滞なし）などが審査の対象となります。健全な信用情報を持っていることが、審査に通過するための重要なポイントです。</p>
-<p>#### 資産状況 不動産（自宅時価3,000万円）や預貯金（500万円）、株式（時価100万円）などの資産情報も審査の対象になります。資産が豊富であれば、収入が少なくても融資を受けられる可能性が高くなります。</p>
-<p>#### 家族構成 扶養家族の有無（無し）や、佐藤さんの収入（年金月15万円）なども審査の要素となります。家族の状況から、返済能力を判断されることになります。</p>
-<p>以上のように、収入基準以外にも、さまざまな要素が審査の対象となっています。無職の方でも、これらのポイントに留意して申し込めば、カードローンを借りられる可能性は高まります。</p>
+<p>カードローンを利用するには、安定した収入が求められます。ただし、収入基準は金融機関によって異なります。</p>
+<h4>正社員・契約社員の場合</h4>
+<p>勤続年数が半年〜1年以上あれば、多くのカードローンで申込可能です。年収の条件は明示されていないことが多いですが、返済能力を総合的に判断されます。</p>
+<h4>アルバイト・パートの場合</h4>
+<p>継続的な収入があれば申込可能な商品も多くあります。ただし、利用限度額は低めに設定されることが一般的です。</p>
+<h4>無職の場合</h4>
+<p>原則として、収入のない無職の方は消費者金融のカードローン審査に通ることは難しいです。貸金業法の総量規制により、年収の3分の1までしか借りられないためです。</p>
+<h3 id="section-2">無職でも借入できる可能性がある方法</h3>
+<p>完全な無職でカードローンを借りることは困難ですが、以下のような方法が考えられます。</p>
+<h4>年金受給者の場合</h4>
+<p>年金も「安定した収入」として認められる場合があります。一部の銀行カードローンでは、年金収入のみでも申込可能です。年金証書を提出することで審査を受けられます。</p>
+<h4>配偶者貸付を利用する</h4>
+<p>専業主婦（主夫）の方は、配偶者に安定した収入があれば「配偶者貸付」を利用できる場合があります。配偶者の同意書と収入証明が必要です。</p>
+<h4>不動産担保ローンを検討する</h4>
+<p>自宅などの不動産を担保にする「不動産担保ローン」であれば、無職でも借りられる可能性があります。ただし、これはカードローンではなく別の商品になります。</p>
+<h3 id="section-3">カードローンの審査で重視されるポイント</h3>
+<p>カードローンの審査では、収入だけでなく以下のような要素も総合的に判断されます。</p>
+<h4>信用情報</h4>
+<p>CICやJICCなどの信用情報機関に登録されている、過去の借入履歴や返済状況が確認されます。延滞や債務整理の記録があると審査に通りにくくなります。</p>
+<h4>他社からの借入状況</h4>
+<p>すでに他社から借入がある場合、その金額や件数も審査に影響します。総量規制により、年収の3分の1を超える借入はできません。</p>
+<h4>勤務先・雇用形態</h4>
+<p>安定した収入があるかどうかの判断材料として、勤務先や雇用形態、勤続年数が確認されます。</p>
+<p>無職の方がカードローンを利用するのは難しいのが実情ですが、年金受給者や配偶者の収入がある方は、条件によっては借入できる可能性があります。</p>
 <h3 id="section-4">まとめ</h3>
-<p>無職の方でも、年金・佐藤さんの収入（月15万円）を活用したり、年収500万円以上の田中さんを連帯保証人に立てたり、自宅（時価3,000万円）を担保に提供したりすれば、カードローンを借りられる可能性があります。ただし、信用情報（過去5年間の延滞なし）や資産状況（不動産3,000万円、預貯金500万円、株式100万円）、家族構成（扶養家族無し）なども審査の対象となるため、これらのポイントにも留意する必要があります。 無職でもカードローンを上手に活用できるよう、ぜひ本記事の内容を参考にしてください。</p>
+<p>完全な無職の状態でカードローンを借りることは、総量規制の関係から基本的に難しいです。ただし、年金受給者の方や、配偶者に収入がある方は「配偶者貸付」を利用できる可能性があります。また、不動産担保ローンなど別の借入方法も検討の余地があります。借入の際は、信用情報や返済能力を冷静に判断し、無理のない計画を立てることが大切です。</p>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">無職でもカードローンを借りることはできますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、年金や家族の収入を証明できたり、連帯保証人を立てたり、担保を提供したりすることで、無職でもカードローンを借りられる可能性があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの審査では何が重視されますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">収入基準のほかに、信用情報、資産状況、家族構成なども審査の対象となります。健全な信用情報と十分な資産があれば、収入が少なくても融資を受けられる可能性があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">無職の場合、どのような収入を証明すればカードローンを借りられますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">年金や家族の収入(月15万円以上)を証明できれば、無職でもカードローンを借りられる可能性があります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">田中さんを連帯保証人に立てるとどのようなメリットがありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">年収500万円以上の田中さんを連帯保証人に立てることで、無職でも審査に通過しやすくなります。田中さんの収入が審査の対象となるため、無職でも借りられるチャンスが広がります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">自宅を担保に提供するとカードローンが借りられますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">自宅(時価3,000万円)を担保に提供することで、無職でも借りられる可能性が高くなります。担保を提供することでカード会社の貸し倒れリスクが軽減されるため、無職でも融資を受けられる場合があります。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">無職でもカードローンを借りることはできますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">原則として、収入のない無職の方がカードローンを借りることは難しいです。ただし、年金受給者や配偶者貸付を利用できる方は審査に通る可能性があります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの審査では何が重視されますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">安定した収入があるかどうかが最も重視されます。その他、信用情報（過去の返済履歴）、他社借入状況、勤続年数なども審査の対象です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">年金受給者でもカードローンは利用できますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、一部の銀行カードローンでは年金を「安定した収入」として認めており、年金受給者でも申込可能です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">専業主婦でも借りられるカードローンはありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">配偶者に安定した収入があれば「配偶者貸付」を利用できる消費者金融もあります。配偶者の同意書と収入証明が必要です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">不動産担保ローンとカードローンの違いは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">不動産担保ローンは自宅などを担保にする別の融資商品です。無担保のカードローンより金利が低い傾向がありますが、返済できない場合は担保を失うリスクがあります。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E7%84%A1%E8%81%B7%E3%81%A7%E3%82%82%E5%80%9F%E3%82%8A%E3%82%89%E3%82%8C%E3%82%8B%EF%BC%9F%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E5%AF%A9%E6%9F%BB%E3%81%AE%E5%8F%8E%E5%85%A5%E5%9F%BA%E6%BA%96%E3%82%92%E8%A7%A3%E8%AA%AC&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3015,185 +2989,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(14)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

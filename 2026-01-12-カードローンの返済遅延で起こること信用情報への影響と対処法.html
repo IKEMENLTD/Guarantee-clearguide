@@ -15,7 +15,8 @@
   
   <title>カードローンの返済遅延で起こること｜信用情報への影響と対処法</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2720,7 +2722,7 @@
       "@type": "HowToStep",
       "position": 2,
       "name": "ステップ2: 遅延を防ぐための対策とは？",
-      "text": "Photo from Lorem Picsum カードローンの返済が遅れないよう、早めの対策を講じることが大切です。 返済予定を確認する まずは、カードローンの返済予定を確認しましょう。返済日や返済金額、返済方法などを把握しておくことが重要です。返済予定を把握することで、返済忘れを防ぐことができます。カードローン利用者の90%が返済予定の確認を行っている（○○金融調査, 2023）。 返済方法を見",
+      "text": "遅延を防ぐ対策として、返済日のカレンダー設定、口座振替の活用、返済困難時の早期相談が有効です。延滞する前にカードローン会社に連絡すれば、返済計画の見直しに応じてもらえることがあります。",
       "image": "https://picsum.photos/seed/2012763657/1200/630"
     },
     {
@@ -2750,7 +2752,7 @@
       "name": "遅延を防ぐための対策とは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Photo from Lorem Picsum カードローンの返済が遅れないよう、早めの対策を講じることが大切です。"
+        "text": "カードローンの返済が遅れないよう、早めの対策を講じることが大切です。"
       }
     }
   ]
@@ -2808,7 +2810,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2823,7 +2824,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2842,7 +2842,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2869,7 +2868,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2885,39 +2883,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2928,17 +2908,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンの返済遅延で起こること｜信用情報への影響と対処法</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:52:09.932Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2946,7 +2923,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -3034,25 +3011,25 @@
 <h2 id="section-1">カードローンの返済が遅れるとどうなるのかとは？</h2>
 <p>カードローンの返済が滞ると、深刻な影響が出てくるのをご存知でしょうか。遅延は信用情報に悪影響を与え、金融機関からの信用が低下する可能性があります。さらに、延滞料の発生や法的措置の対象になるなど、様々な問題が生じる可能性があります。</p>
 <h3 id="section-2">信用情報への影響</h3>
-<p>カードローンの返済が遅れると、信用情報機関に記録されます。この記録は、銀行や信用カード会社などの金融機関が個人の信用力を判断する際に参考にされます。信用情報が悪化すると、新たなローンの申し込みが難しくなったり、ローン金利が高くなるなど、金融取引に不利な影響が出てきます。カードローンの延滞は信用情報に5年間記録されるため（○○金融研究所, 2021）、長期的な影響が懸念されます。</p>
-<h3 id="section-3">延滞料の発生</h3>
-<p>カードローンの返済が遅れると、延滞料が発生します。延滞料は通常、遅延日数に応じて増加していき、平均で1日あたり0.08%程度（○○銀行, 2023）となります。延滞料は返済額に上乗せされるため、返済総額が膨らんでしまいます。</p>
+<p>カードローンの返済が遅れると、信用情報機関（CIC、JICC等）に「延滞」として記録されます。61日以上の延滞や3ヶ月以上の遅延は「異動情報」として登録され、いわゆる「ブラック」状態に。この情報は5年間保存され、その間は新たなローンやクレジットカードの審査にほぼ通らなくなります。</p>
+<h3 id="section-3">遅延損害金の発生</h3>
+<p>返済期日を過ぎると「遅延損害金」が発生します。多くのカードローンでは年率20%程度（日割り計算で約0.055%/日）が設定されています。例えば10万円を30日延滞した場合、約1,650円の遅延損害金がかかります。</p>
 <h3 id="section-4">法的措置の対象になる</h3>
-<p>返済が長期化すると、金融機関から法的措置を取られる可能性があります。催促状の送付や、裁判所への支払い命令の申請、差し押さえなどの措置が取られる可能性があります。法的措置を受けると、さらに返済が困難になるだけでなく、信用情報にも大きな影響が出てきます。2021年には延滞者の20%が法的措置の対象となった（○○消費者金融協会, 2022）。</p>
+<p>返済が長期間滞ると、督促状の送付、電話連絡を経て、最終的には裁判所を通じた支払督促や、給与・預金の差し押さえなどの法的措置に発展する可能性があります。一般的に3ヶ月〜6ヶ月以上の延滞で法的措置が検討されます。</p>
 <h2 id="section-5">遅延を防ぐための対策とは？</h2>
 <figure class="article-image">
   <img src="https://picsum.photos/seed/2012763657/1200/630" alt="遅延を防ぐための対策とは？" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
 <p>カードローンの返済が遅れないよう、早めの対策を講じることが大切です。</p>
 <h3 id="section-6">返済予定を確認する</h3>
-<p>まずは、カードローンの返済予定を確認しましょう。返済日や返済金額、返済方法などを把握しておくことが重要です。返済予定を把握することで、返済忘れを防ぐことができます。カードローン利用者の90%が返済予定の確認を行っている（○○金融調査, 2023）。</p>
-<h3 id="section-7">返済方法を見直す</h3>
-<p>カードローンの返済方法については、自動引き落としなどの便利な方法を活用するのがおすすめです。自動引き落としにすれば、返済忘れを防ぐことができます。また、返済額が高すぎる場合は、返済方法を見直し、返済額を下げる選択肢もあります。自動引き落とし利用者は75%に達している（○○経済研究所, 2022）。</p>
+<p>返済日や返済金額をしっかり把握しておくことが基本です。スマホのカレンダーにリマインダーを設定する、給料日直後を返済日に設定するなど、忘れない工夫をしましょう。</p>
+<h3 id="section-7">口座振替を活用する</h3>
+<p>銀行口座からの自動引き落とし（口座振替）を設定しておけば、返済忘れを防げます。ただし、口座残高不足には注意が必要です。返済日前には必ず残高を確認しましょう。</p>
 <h3 id="section-8">返済困難な場合は早めに相談する</h3>
-<p>万が一、返済が困難になった場合は、早めに金融機関に相談しましょう。金融機関とコミュニケーションを取り、返済計画の見直しや減額などの対応策を検討することができます。相談を早めに行えば、延滞料の発生や法的措置を回避できる可能性が高くなります。返済困難者の60%が早期に金融機関に相談している（○○消費者金融協会, 2023）。</p>
+<p>万が一、返済が困難になった場合は、延滞する前にカードローン会社に連絡しましょう。返済額の減額や返済日の変更など、相談に応じてもらえることがあります。放置して延滞が長期化するよりも、早めの相談が重要です。</p>
 <h2 id="section-9">よくある質問</h2>
 <p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの返済が遅れるとどうなるのか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">信用情報が悪化し、新たなローンの申し込みが難しくなったり、ローン金利が高くなるなど、金融取引に不利な影響が出る可能性があります。</span></div> </div></p>
 <p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの延滞はどのように信用情報に記録されるか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンの延滞は信用情報に5年間記録されるため、長期的な影響が懸念されます。</span></div> </div></p>
@@ -3063,7 +3040,7 @@
 <figure class="article-image">
   <img src="https://picsum.photos/seed/1342731678/1200/630" alt="まとめ" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
 <p>カードローンの返済が遅れると、信用情報への悪影響や延滞料の発生、さらには法的措置の対象となる可能性があります。返済予定の確認や返済方法の見直し、返済困難時の早期相談が重要です。カードローンの返済管理には十分注意を払い、トラブルを回避しましょう。</p>
@@ -3085,187 +3062,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(18)</span></a></li>
-          <li><a href="../category/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2.html">キャリア<span class="category-count">(1)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

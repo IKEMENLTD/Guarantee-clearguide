@@ -15,7 +15,8 @@
   
   <title>カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ" />
   <meta property="og:description" content="カードローン審査に通過する5つのポイントと、通過率を9割まで高める具体的な対策をご紹介します。 カードローンは手軽に借り入れができる便利なサービスですが、審査に通るのは簡単ではありません。審査に落ちる人の特徴を把握し、..." />
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:42:46.485Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2935,26 +2912,36 @@
 
       <p>カードローン審査に通過する5つのポイントと、通過率を9割まで高める具体的な対策をご紹介します。</p>
 <p>カードローンは手軽に借り入れができる便利なサービスですが、審査に通るのは簡単ではありません。審査に落ちる人の特徴を把握し、通過率を上げるためのコツを紹介します。</p>
-<h3 id="section-1">カードローンの審査に落ちる人の特徴</h3>
-<p>#### 1. 申込時の年齢が高い カードローンの審査では、申込時の年齢が重要な審査ポイントとなります。一般的に、20代や30代前半の人は比較的審査に通りやすいですが、40代以降になると審査が厳しくなる傾向にあります。高齢になるほど、返済能力に不安がある可能性が高くなるためです（50歳以上の申込者の審査通過率は35%程度に留まる（○○金融調査, 2024））。</p>
-<p>#### 2. 収入が少ない カードローンの審査では、申込者の安定した収入が重要な要素となります。収入が少ない人は、返済能力が低いと判断される可能性が高いため、審査に落ちやすくなります。特に無職や学生、パート・アルバイトなどの不安定な収入源では、審査に通過するのが難しい場合があります（申込者の年収が300万円未満の場合、審査通過率は25%程度（○○信用調査, 2024））。</p>
-<p>#### 3. 返済能力に不安がある カードローンの審査では、申込者の返済能力が最も重要な要素となります。現在の収入や支出、他の借入れ状況などを総合的に判断し、返済能力に不安がある場合は、審査に通過しにくくなります。特に、過剰な借り入れや滞納歴がある人は、審査に通りにくい傾向にあります（過剰な借入れ(月々の返済額が収入の30%超)がある申込者の審査通過率は15%程度（○○金融調査, 2024））。</p>
-<p>#### 4. 信用情報に問題がある カードローンの審査では、申込者の信用情報も重要な要素となります。過去の滞納や延滞、債務整理の経験などがある人は、信用情報に問題があると判断される可能性が高く、審査に通過しにくくなります（過去の延滞歴がある申込者の審査通過率は20%程度（○○信用情報機関, 2024））。</p>
-<p>#### 5. 勤務年数が短い カードローンの審査では、申込者の勤務年数も重要な要素となります。勤務年数が短い人は、安定した収入源があるかどうかが不明確であるため、審査に通りにくい傾向にあります。特に新卒や転職歴が多い人は、審査に落ちやすくなる可能性があります（勤続年数3年未満の申込者の審査通過率は30%程度（○○人事情報, 2024））。</p>
-<h3 id="section-2">カードローンの審査通過率を上げるコツ</h3>
-<p>これらの特徴を踏まえ、カードローンの審査に通過するためのコツをご紹介します。</p>
-<p>#### 1. 申込時期を考える カードローンの審査では、年齢や勤務年数などが重要な要素となるため、申込時期を慎重に検討することが重要です。できるだけ若い年齢で、安定した収入源があるタイミングで申し込むことをおすすめします。</p>
-<p>#### 2. 収入を証明する書類を用意する カードローンの審査では、申込者の収入が重要な要素となるため、給与明細や源泉徴収票など、収入を証明する書類を用意しておくことが重要です。これらの書類を提出することで、返済能力を適切に評価してもらえる可能性が高まります。</p>
-<p>#### 3. 返済能力を高める カードローンの審査では、返済能力が最も重要な要素となるため、返済能力を高めることが重要です。他の借入れを整理したり、支出を減らすなどして、余裕のある返済計画を立てることをおすすめします。</p>
-<p>#### 4. 信用情報を確認する カードローンの審査では、申込者の信用情報も重要な要素となるため、事前に自分の信用情報を確認することが重要です。過去の滞納や延滞、債務整理の経験がある場合は、その状況を説明できるよう準備しておくことをおすすめします。</p>
-<p>#### 5. 勤務実績を証明する カードローンの審査では、申込者の勤務年数も重要な要素となるため、勤務実績を証明する書類を用意することが重要です。在職証明書や勤務経歴書などを提出することで、安定した収入源があると評価してもらえる可能性が高まります。</p>
+<h2 id="section-1">カードローンの審査に落ちる人の特徴5選</h2>
+<h3>1. 収入が不安定・年収が低い</h3>
+<p>カードローンの審査では「安定した収入」が重要視されます。無職の方は審査に通りません。パート・アルバイトでも審査は可能ですが、勤務期間が短いと不利になります。また、消費者金融では総量規制により年収の3分の1までしか借りられないため、希望額に対して年収が低いと審査落ちの原因になります。</p>
+<h3>2. 他社借入が多い</h3>
+<p>すでに複数のカードローンを利用している場合、審査は厳しくなります。借入件数が3〜4件以上あると「多重債務」と判断される可能性があります。また、総量規制の上限に近い借入残高がある場合も審査に通りにくくなります。</p>
+<h3>3. 信用情報に傷がある</h3>
+<p>過去に延滞や債務整理の経験があると、信用情報機関（CIC、JICC等）に記録が残ります。いわゆる「ブラック」状態だと審査にはまず通りません。延滞情報は5年、債務整理は5〜10年程度記録が残ります。</p>
+<h3>4. 勤続年数が短い</h3>
+<p>転職直後など勤続年数が短いと「収入の安定性」を疑われます。最低でも半年、できれば1年以上の勤続があると審査に有利です。転職が多い人も不利になる傾向があります。</p>
+<h3>5. 申込内容に虚偽がある</h3>
+<p>年収や勤務先を偽って申告すると、審査で発覚した場合に即否決となります。また、虚偽申告は詐欺罪に問われる可能性もあるため絶対に避けましょう。</p>
+<h2 id="section-2">審査通過率を上げるコツ</h2>
+<p>審査に通りやすくするためのポイントをご紹介します。</p>
+<h3>1. 借入希望額は最小限に</h3>
+<p>必要最小限の金額で申し込むことで審査に通りやすくなります。限度額は後から増額申請もできるため、最初は控えめな金額がおすすめです。</p>
+<h3>2. 他社借入を整理する</h3>
+<p>申込前に完済できる借入は返済しておきましょう。使っていないカードローンも解約しておくと審査に有利です。</p>
+<h3>3. 信用情報を確認する</h3>
+<p>CICやJICCで自分の信用情報を開示請求できます（有料）。心当たりがある方は事前に確認しておくと良いでしょう。</p>
+<h3>4. 在籍確認に備える</h3>
+<p>勤務先への在籍確認は審査の一環です。電話に出られるタイミングで申し込むか、書類での在籍確認に対応しているカードローンを選びましょう。</p>
+<h3>5. 正確な情報を申告する</h3>
+<p>年収や勤務先は正確に申告しましょう。多少不利な情報でも、正直に申告することが審査通過への近道です。</p>
 <p>これらのコツを意識しながら、申し込み時期や提出書類を慎重に検討することで、カードローンの審査に通過する可能性が高まります。カードローンを利用する際は、自身の財務状況を把握し、慎重に検討することが重要です。</p>
 <h2 id="section-3">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの審査に落ちやすい年齢はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">40代以降の申込者の審査通過率は35%程度と低くなる傾向にあります。高齢になるほど返済能力に不安がある可能性が高くなるためです。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">年収300万円未満の人はカードローンの審査に通りにくいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、そのとおりです。年収300万円未満の場合、審査通過率は25%程度と低くなります。安定した収入がないと判断されるためです。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">過剰な借入れがあるとカードローンの審査に通りにくいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、そうです。月々の返済額が収入の30%を超える過剰な借入れがある場合、審査通過率は15%程度と非常に低くなります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">過去の延滞履歴があるとカードローンの審査に通りにくいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、その通りです。過去の延滞履歴がある申込者の審査通過率は20%程度と低くなります。信用情報に問題があると判断されるためです。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">勤続年数3年未満の人はカードローンの審査に通りにくいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、そのとおりです。勤続年数3年未満の申込者の審査通過率は30%程度と低くなります。安定した収入源があるかが不明確だと判断されるためです。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">無職でもカードローンの審査に通る？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">無職の場合、通常のカードローン審査には通りません。配偶者に収入がある専業主婦の方は、銀行カードローンの一部で利用可能な場合があります。まずは収入を得ることが先決です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">ブラックリストに載っていると絶対審査に通らない？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">延滞や債務整理の情報が信用情報機関に登録されている期間（5〜10年）は、審査に通るのは非常に難しいです。登録期間が過ぎれば情報は消えるため、それまで待つのが現実的です。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">転職したばかりでも審査に通る？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">勤続期間が短いと不利ですが、大手企業や公務員への転職であれば審査に通る可能性はあります。できれば半年以上の勤続実績を作ってから申し込むのがおすすめです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">審査に落ちた後すぐに再申込していい？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">短期間に複数社へ申し込むと「申込ブラック」状態になり、さらに審査に通りにくくなります。最低でも1〜3ヶ月は間隔を空け、落ちた原因を改善してから再申込しましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">パート・アルバイトでも審査に通る？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">パート・アルバイトでも毎月の安定収入があれば審査対象になります。ただし、勤続期間が短いと不利です。消費者金融の方が銀行より審査に通りやすい傾向があります。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E5%AF%A9%E6%9F%BB%E3%81%AB%E8%90%BD%E3%81%A1%E3%82%8B%E4%BA%BA%E3%81%AE%E7%89%B9%E5%BE%B45%E9%81%B8%EF%BD%9C%E9%80%9A%E9%81%8E%E7%8E%87%E3%82%92%E4%B8%8A%E3%81%92%E3%82%8B%E3%82%B3%E3%83%84&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -2973,142 +2960,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(2)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

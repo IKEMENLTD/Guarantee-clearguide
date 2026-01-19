@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="カードローンに関するよくある質問と回答。審査、在籍確認、返済、金利など、初めての方が気になる疑問を分かりやすく解説します。">
+  <meta name="robots" content="index, follow">
+
+  <title>よくある質問（FAQ） | ギャランティークリアガイド</title>
+
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
+
+  <style>
+    .faq-hero {
+      background: var(--gradient-primary);
+      padding: var(--space-3xl) 0;
+      text-align: center;
+      color: white;
+    }
+
+    .faq-hero h1 {
+      font-family: var(--font-display);
+      font-size: var(--font-size-4xl);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: var(--space-md);
+    }
+
+    .faq-hero p {
+      font-size: var(--font-size-lg);
+      opacity: 0.9;
+    }
+
+    .faq-nav {
+      background: var(--bg-alt);
+      padding: var(--space-lg) 0;
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-nav-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-sm);
+    }
+
+    .faq-nav a {
+      padding: var(--space-sm) var(--space-md);
+      background: var(--bg);
+      border-radius: var(--radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: all var(--transition-fast);
+    }
+
+    .faq-nav a:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .faq-content {
+      padding: var(--space-3xl) 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-section {
+      margin-bottom: var(--space-3xl);
+    }
+
+    .faq-section-title {
+      font-family: var(--font-display);
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--primary);
+      padding-bottom: var(--space-md);
+      border-bottom: 3px solid var(--primary);
+      margin-bottom: var(--space-xl);
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .faq-section-title svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .faq-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-md);
+      overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .faq-item:hover {
+      border-color: var(--primary-light);
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: var(--space-lg) var(--space-xl);
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      text-align: left;
+      font-family: var(--font-display);
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text);
+      transition: all var(--transition-fast);
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+    }
+
+    .faq-question::before {
+      content: 'Q';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--gradient-primary);
+      color: white;
+      border-radius: var(--radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-bold);
+      flex-shrink: 0;
+    }
+
+    .faq-question-text {
+      flex: 1;
+    }
+
+    .faq-toggle {
+      width: 24px;
+      height: 24px;
+      color: var(--text-lighter);
+      transition: transform var(--transition-fast);
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 var(--space-xl) var(--space-xl);
+      padding-left: calc(var(--space-xl) + 32px + var(--space-md));
+    }
+
+    .faq-answer-inner p {
+      color: var(--text-light);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-md);
+    }
+
+    .faq-answer-inner p:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-answer-inner strong {
+      color: var(--text);
+    }
+
+    .faq-answer-inner ul {
+      margin: var(--space-md) 0;
+      padding-left: var(--space-xl);
+    }
+
+    .faq-answer-inner li {
+      color: var(--text-light);
+      margin-bottom: var(--space-xs);
+    }
+
+    .faq-highlight {
+      background: var(--color-primary-50);
+      border-left: 4px solid var(--primary);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-top: var(--space-md);
+    }
+
+    .faq-highlight p {
+      margin: 0;
+      color: var(--text);
+      font-size: var(--font-size-sm);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all var(--transition-base);
+      z-index: 1000;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    @media (max-width: 768px) {
+      .faq-hero h1 {
+        font-size: var(--font-size-2xl);
+      }
+
+      .faq-question {
+        font-size: var(--font-size-base);
+        padding: var(--space-md);
+      }
+
+      .faq-answer-inner {
+        padding: 0 var(--space-md) var(--space-md);
+        padding-left: calc(var(--space-md) + 32px + var(--space-sm));
+      }
+
+      .faq-section-title {
+        font-size: var(--font-size-xl);
+      }
+
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="site-logo">
+        <img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img">
+      </a>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+        <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+        <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+        <a href="./glossary.html" class="nav-link">用語集</a>
+        <a href="./faq.html" class="nav-link active">FAQ</a>
+      </nav>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="faq-hero">
+    <div class="container">
+      <h1>よくある質問（FAQ）</h1>
+      <p>カードローンに関する疑問にお答えします</p>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="faq-nav">
+    <div class="container">
+      <div class="faq-nav-inner">
+        <a href="#shinsa">審査について</a>
+        <a href="#zaiseki">在籍確認</a>
+        <a href="#hensai">返済について</a>
+        <a href="#kinri">金利・利息</a>
+        <a href="#moushikomi">申し込み</a>
+        <a href="#sonota">その他</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="faq-content container">
+
+    <!-- 審査について -->
+    <section class="faq-section" id="shinsa">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 12l2 2 4-4"></path>
+          <circle cx="12" cy="12" r="10"></circle>
+        </svg>
+        審査について
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">カードローンの審査にはどのくらい時間がかかりますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>審査時間は金融機関によって異なりますが、一般的な目安は以下の通りです：</p>
+            <ul>
+              <li><strong>消費者金融</strong>：最短18分〜1時間程度</li>
+              <li><strong>銀行カードローン</strong>：最短翌営業日〜1週間程度</li>
+            </ul>
+            <p>即日融資を希望する場合は、消費者金融がおすすめです。ただし、申込時間や必要書類の準備状況によっては翌日以降になることもあります。</p>
+            <div class="faq-highlight">
+              <p>平日の午前中に申し込むと、当日中に審査結果が出やすくなります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">審査に落ちた場合、再申し込みはできますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>はい、再申し込みは可能です。ただし、すぐに再申し込みしても同じ結果になる可能性が高いです。</p>
+            <p><strong>再申し込みまでの推奨期間は6ヶ月以上</strong>です。この間に以下の対策を取ることをおすすめします：</p>
+            <ul>
+              <li>収入を安定させる（転職直後は避ける）</li>
+              <li>他社借入を減らす</li>
+              <li>クレジットカードの支払いを遅延なく行う</li>
+              <li>申込情報の記録が消えるのを待つ（6ヶ月程度）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">審査に通りやすくするコツはありますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>審査通過率を上げるためのポイントをご紹介します：</p>
+            <ul>
+              <li><strong>希望額は控えめに</strong>：必要最低限の金額で申し込む</li>
+              <li><strong>正確な情報を記入</strong>：虚偽申告は審査落ちの原因に</li>
+              <li><strong>同時申し込みを避ける</strong>：1社ずつ申し込む</li>
+              <li><strong>勤続年数を確認</strong>：1年以上が望ましい</li>
+              <li><strong>他社借入を整理</strong>：借入件数は少ない方が有利</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>短期間に複数社へ申し込むと「申し込みブラック」と判断され、審査に不利になることがあります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 在籍確認 -->
+    <section class="faq-section" id="zaiseki">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+        </svg>
+        在籍確認について
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">在籍確認とは何ですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>在籍確認とは、申込者が申告した勤務先に本当に在籍しているかを確認する手続きです。主に以下の方法で行われます：</p>
+            <ul>
+              <li><strong>電話確認</strong>：勤務先に電話をかけて確認</li>
+              <li><strong>書類確認</strong>：社員証や給与明細などで確認</li>
+            </ul>
+            <p>電話の場合、担当者は社名を名乗らず個人名で電話するため、カードローンの申し込みだとは分かりにくくなっています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">在籍確認なしで借りられるカードローンはありますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>完全に在籍確認なしのカードローンはありませんが、<strong>電話連絡なしで在籍確認できるカードローン</strong>はあります。</p>
+            <p>SMBCモビットのWEB完結申込なら、条件を満たせば電話連絡なしで契約できます。必要な条件：</p>
+            <ul>
+              <li>三井住友銀行、三菱UFJ銀行、みずほ銀行、ゆうちょ銀行いずれかの口座を持っている</li>
+              <li>社会保険証または組合保険証を持っている</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>他社でも、事前に相談すれば書類での在籍確認に対応してくれる場合があります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">在籍確認の電話で会社にバレませんか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>基本的にバレにくい仕組みになっています：</p>
+            <ul>
+              <li>担当者は<strong>個人名</strong>で電話する（会社名は名乗らない）</li>
+              <li>用件は伝えない（「山田さんいらっしゃいますか」程度）</li>
+              <li>本人が電話に出なくても「席を外している」などで在籍確認完了</li>
+            </ul>
+            <p>ただし、普段個人からの電話がない職場では不自然に思われる可能性もあります。心配な場合は、事前にカードローン会社に相談しましょう。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 返済について -->
+    <section class="faq-section" id="hensai">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+          <line x1="1" y1="10" x2="23" y2="10"></line>
+        </svg>
+        返済について
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">返済が遅れるとどうなりますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>返済が遅れると以下のような影響があります：</p>
+            <ul>
+              <li><strong>遅延損害金の発生</strong>：年率20%程度の損害金がかかる</li>
+              <li><strong>督促の連絡</strong>：電話やハガキで連絡が来る</li>
+              <li><strong>利用停止</strong>：新規借入ができなくなる</li>
+              <li><strong>信用情報への記録</strong>：61日以上の延滞で事故情報として登録</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>返済が難しい場合は、延滞する前にカードローン会社に相談しましょう。返済計画の見直しに応じてくれることがあります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">一括返済はできますか？メリットはありますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>はい、いつでも一括返済が可能です。一括返済のメリット：</p>
+            <ul>
+              <li><strong>利息の節約</strong>：残りの返済期間分の利息がかからない</li>
+              <li><strong>精神的な安心</strong>：借金から解放される</li>
+              <li><strong>信用力の向上</strong>：完済実績がつく</li>
+            </ul>
+            <p>一括返済する場合は、返済日当日の利息を含めた正確な金額を確認してから行いましょう。ATMやインターネットバンキングで手続きできます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">返済方法にはどんな種類がありますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>主な返済方法は以下の通りです：</p>
+            <ul>
+              <li><strong>口座引落し</strong>：毎月自動で引き落とし（忘れにくい）</li>
+              <li><strong>ATM返済</strong>：コンビニや銀行のATMで返済</li>
+              <li><strong>振込返済</strong>：銀行振込で返済</li>
+              <li><strong>インターネット返済</strong>：スマホやPCから返済</li>
+            </ul>
+            <p>口座引落しを基本にしつつ、余裕があるときはATMやネットで繰上返済するのがおすすめです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 金利・利息 -->
+    <section class="faq-section" id="kinri">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="12" y1="1" x2="12" y2="23"></line>
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+        </svg>
+        金利・利息について
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">金利18%は高いですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>カードローンとしては<strong>標準的な金利</strong>です。他の借入方法と比較すると：</p>
+            <ul>
+              <li><strong>消費者金融</strong>：年3.0%〜18.0%</li>
+              <li><strong>銀行カードローン</strong>：年1.5%〜14.8%</li>
+              <li><strong>クレジットカードキャッシング</strong>：年15.0%〜18.0%</li>
+              <li><strong>住宅ローン</strong>：年0.3%〜1.5%程度</li>
+            </ul>
+            <p>初めての利用で限度額が少ない場合は上限金利が適用されやすいですが、利用実績を積むと金利が下がることがあります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">無利息期間とは何ですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>無利息期間とは、一定期間利息がかからないサービスです。主に消費者金融で提供されています。</p>
+            <ul>
+              <li><strong>プロミス</strong>：初回借入日の翌日から30日間</li>
+              <li><strong>アイフル</strong>：契約日の翌日から30日間</li>
+              <li><strong>アコム</strong>：契約日の翌日から30日間</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>無利息期間中に完済すれば、利息0円で借りられます。短期間の借入に特におすすめです。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">10万円借りたら利息はいくらになりますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>金利18%で10万円を借りた場合の利息目安：</p>
+            <ul>
+              <li><strong>30日間</strong>：約1,479円</li>
+              <li><strong>6ヶ月（一括返済）</strong>：約8,876円</li>
+              <li><strong>1年（毎月9,167円返済）</strong>：約10,011円</li>
+            </ul>
+            <p>計算式：借入残高 × 金利 ÷ 365日 × 借入日数</p>
+            <p>早く返済するほど利息は少なくなります。余裕があれば繰上返済を活用しましょう。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 申し込み -->
+    <section class="faq-section" id="moushikomi">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        申し込みについて
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">申し込みに必要な書類は何ですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>基本的に必要な書類は以下の通りです：</p>
+            <p><strong>【必須】本人確認書類（いずれか1点）</strong></p>
+            <ul>
+              <li>運転免許証</li>
+              <li>マイナンバーカード</li>
+              <li>パスポート</li>
+              <li>健康保険証＋住民票など</li>
+            </ul>
+            <p><strong>【条件により必要】収入証明書類</strong></p>
+            <ul>
+              <li>源泉徴収票</li>
+              <li>給与明細書（直近2ヶ月分）</li>
+              <li>確定申告書</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>50万円以下の借入、または他社との合計が100万円以下なら、収入証明書は原則不要です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">家族にバレずに借りられますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>はい、以下の対策で家族にバレにくくなります：</p>
+            <ul>
+              <li><strong>WEB完結</strong>で申し込む（来店不要）</li>
+              <li><strong>郵送物なし</strong>を選択する</li>
+              <li><strong>カードレス</strong>契約を選ぶ</li>
+              <li>利用明細は<strong>WEB明細</strong>にする</li>
+              <li>返済は<strong>口座引落し</strong>で自動化</li>
+            </ul>
+            <p>SMBCモビットやプロミスはWEB完結で郵送物なしにできるため、家族バレ対策に向いています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">アルバイトやパートでも申し込めますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p><strong>はい、申し込めます。</strong>カードローンの申込条件は一般的に「安定した収入があること」です。</p>
+            <p>アルバイト・パートの方が審査に通りやすくするポイント：</p>
+            <ul>
+              <li>勤続期間が長いほど有利（6ヶ月以上が目安）</li>
+              <li>希望額は控えめに設定する</li>
+              <li>他社借入がないか、少ない状態で申し込む</li>
+            </ul>
+            <p>消費者金融は銀行カードローンより審査が柔軟な傾向があります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- その他 -->
+    <section class="faq-section" id="sonota">
+      <h2 class="faq-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        その他
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">総量規制とは何ですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>総量規制とは、<strong>年収の3分の1を超える貸付を禁止する</strong>法律（貸金業法）の規制です。</p>
+            <ul>
+              <li>年収300万円の場合 → 借入上限は100万円</li>
+              <li>消費者金融やクレジットカードのキャッシングが対象</li>
+              <li><strong>銀行カードローンは対象外</strong>（ただし自主規制あり）</li>
+            </ul>
+            <p>複数社から借りている場合は、合計額が年収の3分の1以内である必要があります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">ブラックリストに載るとどうなりますか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>「ブラックリスト」とは、信用情報機関に事故情報（異動情報）が登録された状態を指します。</p>
+            <p><strong>登録されると起こること：</strong></p>
+            <ul>
+              <li>新規のカードローン審査に通りにくくなる</li>
+              <li>クレジットカードが作れなくなる</li>
+              <li>住宅ローンなどの審査も難しくなる</li>
+            </ul>
+            <p><strong>登録される主な原因：</strong></p>
+            <ul>
+              <li>61日以上の長期延滞</li>
+              <li>債務整理（任意整理、自己破産など）</li>
+              <li>強制解約</li>
+            </ul>
+            <div class="faq-highlight">
+              <p>事故情報は5〜10年で消えます。その間は新規借入が難しくなるため、返済は計画的に行いましょう。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-question-text">カードローンとキャッシングの違いは何ですか？</span>
+          <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>どちらも「お金を借りる」サービスですが、以下の違いがあります：</p>
+            <p><strong>カードローン：</strong></p>
+            <ul>
+              <li>借入専用のサービス</li>
+              <li>限度額が比較的高い（最大800万円など）</li>
+              <li>金利は比較的低め</li>
+            </ul>
+            <p><strong>キャッシング（クレジットカード付帯）：</strong></p>
+            <ul>
+              <li>クレジットカードに付帯するサービス</li>
+              <li>限度額は低め（10〜50万円程度）</li>
+              <li>金利は高め（15〜18%が多い）</li>
+            </ul>
+            <p>まとまった金額を借りるならカードローン、少額・一時的な利用ならキャッシングが向いています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- トップへ戻るボタン -->
+  <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    // FAQアコーディオン
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        const isActive = item.classList.contains('active');
+
+        // 他のアイテムを閉じる（オプション：同時に1つだけ開く場合）
+        // document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+        item.classList.toggle('active');
+      });
+    });
+
+    // スムーススクロール
+    document.querySelectorAll('.faq-nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          const headerHeight = 140;
+          const targetPosition = target.offsetTop - headerHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // トップへ戻るボタン
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ハンバーガーメニュー
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const siteNav = document.getElementById('siteNav');
+    if (hamburgerBtn && siteNav) {
+      hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('active');
+        siteNav.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+
+</html>

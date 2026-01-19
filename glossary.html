@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="カードローンに関する用語を分かりやすく解説。金利、審査、総量規制など、初めての方でも安心して理解できる用語集です。">
+  <meta name="robots" content="index, follow">
+
+  <title>カードローン用語集 | ギャランティークリアガイド</title>
+
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
+
+  <style>
+    .glossary-hero {
+      background: var(--gradient-primary);
+      padding: var(--space-3xl) 0;
+      text-align: center;
+      color: white;
+    }
+
+    .glossary-hero h1 {
+      font-family: var(--font-display);
+      font-size: var(--font-size-4xl);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: var(--space-md);
+    }
+
+    .glossary-hero p {
+      font-size: var(--font-size-lg);
+      opacity: 0.9;
+    }
+
+    .glossary-nav {
+      background: var(--bg-alt);
+      padding: var(--space-lg) 0;
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .glossary-nav-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-sm);
+    }
+
+    .glossary-nav a {
+      padding: var(--space-sm) var(--space-md);
+      background: var(--bg);
+      border-radius: var(--radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: all var(--transition-fast);
+    }
+
+    .glossary-nav a:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .glossary-content {
+      padding: var(--space-3xl) 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .glossary-section {
+      margin-bottom: var(--space-3xl);
+    }
+
+    .glossary-section-title {
+      font-family: var(--font-display);
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--primary);
+      padding-bottom: var(--space-md);
+      border-bottom: 3px solid var(--primary);
+      margin-bottom: var(--space-xl);
+    }
+
+    .glossary-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-lg);
+      transition: all var(--transition-base);
+    }
+
+    .glossary-item:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-light);
+    }
+
+    .glossary-term {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--text);
+      margin-bottom: var(--space-sm);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .glossary-term-reading {
+      font-size: var(--font-size-sm);
+      color: var(--text-lighter);
+      font-weight: var(--font-weight-normal);
+    }
+
+    .glossary-definition {
+      font-size: var(--font-size-base);
+      color: var(--text-light);
+      line-height: var(--line-height-relaxed);
+    }
+
+    .glossary-tag {
+      display: inline-block;
+      padding: var(--space-xs) var(--space-sm);
+      background: var(--color-primary-50);
+      color: var(--primary);
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-semibold);
+      border-radius: var(--radius-full);
+      margin-top: var(--space-md);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-base);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    @media (max-width: 768px) {
+      .glossary-hero h1 {
+        font-size: var(--font-size-2xl);
+      }
+
+      .glossary-content {
+        padding: var(--space-xl) var(--space-md);
+      }
+
+      .glossary-item {
+        padding: var(--space-lg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="site-logo">
+        <img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img">
+      </a>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+        <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+        <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+        <a href="./glossary.html" class="nav-link active">用語集</a>
+        <a href="./faq.html" class="nav-link">FAQ</a>
+      </nav>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="glossary-hero">
+    <div class="container">
+      <h1>カードローン用語集</h1>
+      <p>知っておきたい基本用語を分かりやすく解説</p>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="glossary-nav">
+    <div class="container">
+      <div class="glossary-nav-inner">
+        <a href="#basic">基本用語</a>
+        <a href="#interest">金利・返済</a>
+        <a href="#screening">審査関連</a>
+        <a href="#credit">信用情報</a>
+        <a href="#other">その他</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="glossary-content container">
+
+    <!-- 基本用語 -->
+    <section class="glossary-section" id="basic">
+      <h2 class="glossary-section-title">基本用語</h2>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">カードローン <span class="glossary-term-reading">かーどろーん</span></h3>
+        <p class="glossary-definition">銀行や消費者金融が提供する個人向けの無担保ローン。専用カードやアプリを使って、設定された限度額の範囲内で繰り返し借入・返済ができる。担保や保証人が不要で、使途が自由なのが特徴。</p>
+        <span class="glossary-tag">基本</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">限度額 <span class="glossary-term-reading">げんどがく</span></h3>
+        <p class="glossary-definition">カードローンで借りられる上限金額のこと。審査によって個人ごとに設定され、年収や信用情報によって異なる。利用実績を積むことで増額できる場合もある。</p>
+        <span class="glossary-tag">基本</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">消費者金融 <span class="glossary-term-reading">しょうひしゃきんゆう</span></h3>
+        <p class="glossary-definition">個人向けに小口融資を行う貸金業者のこと。プロミス、アイフル、アコムなどが代表的。銀行カードローンと比べて審査が早い傾向があるが、金利はやや高め。</p>
+        <span class="glossary-tag">基本</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">銀行カードローン <span class="glossary-term-reading">ぎんこうかーどろーん</span></h3>
+        <p class="glossary-definition">銀行が提供するカードローン商品。消費者金融と比べて金利が低い傾向があるが、審査に時間がかかることが多い。総量規制の対象外となる。</p>
+        <span class="glossary-tag">基本</span>
+      </div>
+    </section>
+
+    <!-- 金利・返済 -->
+    <section class="glossary-section" id="interest">
+      <h2 class="glossary-section-title">金利・返済</h2>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">実質年率 <span class="glossary-term-reading">じっしつねんりつ</span></h3>
+        <p class="glossary-definition">借入にかかる利息と手数料を含めた、年間の実質的な金利のこと。APR（Annual Percentage Rate）とも呼ばれる。カードローンを比較する際の重要な指標。</p>
+        <span class="glossary-tag">金利</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">無利息期間 <span class="glossary-term-reading">むりそくきかん</span></h3>
+        <p class="glossary-definition">初回契約時などに設定される、利息がかからない期間のこと。多くの消費者金融では「30日間無利息」などのサービスを提供している。期間内に完済すれば利息0円で借りられる。</p>
+        <span class="glossary-tag">金利</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">遅延損害金 <span class="glossary-term-reading">ちえんそんがいきん</span></h3>
+        <p class="glossary-definition">返済期日に遅れた場合に発生する損害金。通常の利息とは別に年率20%程度が上乗せされる。返済遅延は信用情報にも影響するため注意が必要。</p>
+        <span class="glossary-tag">返済</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">繰り上げ返済 <span class="glossary-term-reading">くりあげへんさい</span></h3>
+        <p class="glossary-definition">毎月の約定返済とは別に、追加で返済すること。元金が早く減るため、支払う利息の総額を抑えられる。多くのカードローンで手数料無料で可能。</p>
+        <span class="glossary-tag">返済</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">リボ払い <span class="glossary-term-reading">りぼばらい</span></h3>
+        <p class="glossary-definition">リボルビング払いの略。毎月の返済額を一定にする返済方式。返済計画が立てやすい反面、借入残高が減りにくく利息が膨らみやすいデメリットがある。</p>
+        <span class="glossary-tag">返済</span>
+      </div>
+    </section>
+
+    <!-- 審査関連 -->
+    <section class="glossary-section" id="screening">
+      <h2 class="glossary-section-title">審査関連</h2>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">在籍確認 <span class="glossary-term-reading">ざいせきかくにん</span></h3>
+        <p class="glossary-definition">申込者が申告した勤務先に本当に在籍しているかを確認する審査プロセス。電話で行われることが多いが、最近はWEB完結で電話なしの業者も増えている。</p>
+        <span class="glossary-tag">審査</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">総量規制 <span class="glossary-term-reading">そうりょうきせい</span></h3>
+        <p class="glossary-definition">貸金業法に基づき、年収の3分の1を超える貸付を禁止する規制。消費者金融やクレジットカードのキャッシングが対象。銀行カードローンは対象外だが、自主規制で同様の基準を設けていることが多い。</p>
+        <span class="glossary-tag">審査</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">保証会社 <span class="glossary-term-reading">ほしょうがいしゃ</span></h3>
+        <p class="glossary-definition">借主が返済できなくなった場合に代わりに返済を行う会社。銀行カードローンでは保証会社の審査も必要となる。保証料は金利に含まれていることが多い。</p>
+        <span class="glossary-tag">審査</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">収入証明書 <span class="glossary-term-reading">しゅうにゅうしょうめいしょ</span></h3>
+        <p class="glossary-definition">源泉徴収票や給与明細など、収入を証明する書類。50万円を超える借入や、他社との合計が100万円を超える場合に提出が求められることが多い。</p>
+        <span class="glossary-tag">審査</span>
+      </div>
+    </section>
+
+    <!-- 信用情報 -->
+    <section class="glossary-section" id="credit">
+      <h2 class="glossary-section-title">信用情報</h2>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">信用情報 <span class="glossary-term-reading">しんようじょうほう</span></h3>
+        <p class="glossary-definition">個人のローンやクレジットカードの利用履歴、返済状況などの情報。信用情報機関（CIC、JICC、KSCなど）に登録され、審査時に照会される。</p>
+        <span class="glossary-tag">信用</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">ブラックリスト <span class="glossary-term-reading">ぶらっくりすと</span></h3>
+        <p class="glossary-definition">俗称であり、実際にそのような名前のリストは存在しない。信用情報に延滞や債務整理などの事故情報が登録された状態を指す。登録されると新規借入が困難になる。</p>
+        <span class="glossary-tag">信用</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">異動情報 <span class="glossary-term-reading">いどうじょうほう</span></h3>
+        <p class="glossary-definition">長期延滞（61日以上）、債務整理、自己破産などの情報。信用情報に登録されると、5〜10年間は新規のローン審査に通りにくくなる。</p>
+        <span class="glossary-tag">信用</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">申し込みブラック <span class="glossary-term-reading">もうしこみぶらっく</span></h3>
+        <p class="glossary-definition">短期間に複数のカードローンに申し込むことで、審査に通りにくくなる状態。申込情報は6ヶ月間記録されるため、立て続けの申込は避けるべき。</p>
+        <span class="glossary-tag">信用</span>
+      </div>
+    </section>
+
+    <!-- その他 -->
+    <section class="glossary-section" id="other">
+      <h2 class="glossary-section-title">その他</h2>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">おまとめローン <span class="glossary-term-reading">おまとめろーん</span></h3>
+        <p class="glossary-definition">複数の借入を1つにまとめるためのローン商品。金利の低いローンにまとめることで、毎月の返済額や総返済額を減らせる可能性がある。</p>
+        <span class="glossary-tag">商品</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">借り換え <span class="glossary-term-reading">かりかえ</span></h3>
+        <p class="glossary-definition">現在利用中のローンを、別のより条件の良いローンで返済すること。金利が下がれば利息負担を軽減できる。</p>
+        <span class="glossary-tag">商品</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">WEB完結 <span class="glossary-term-reading">うぇぶかんけつ</span></h3>
+        <p class="glossary-definition">申込から契約まで、すべての手続きをインターネット上で完結できるサービス。来店不要で、郵送物なしで利用できることが多い。</p>
+        <span class="glossary-tag">サービス</span>
+      </div>
+
+      <div class="glossary-item">
+        <h3 class="glossary-term">即日融資 <span class="glossary-term-reading">そくじつゆうし</span></h3>
+        <p class="glossary-definition">申込当日に借入ができるサービス。消費者金融では対応していることが多いが、申込時間や審査状況によっては翌日以降になる場合もある。</p>
+        <span class="glossary-tag">サービス</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 ギャランティークリアガイド. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="ページトップへ">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    // Hamburger menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const siteNav = document.getElementById('siteNav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      siteNav.classList.toggle('active');
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.glossary-nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          const headerHeight = 140;
+          const targetPosition = target.offsetTop - headerHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

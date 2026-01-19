@@ -15,7 +15,8 @@
   
   <title>複数のカードローンを借りている人へ｜おまとめローンのメリット</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="複数のカードローンを借りている人へ｜おまとめローンのメリット" />
   <meta property="og:description" content="カードローン おまとめは、借入金利を最大30%削減できる効果的な手法です。本記事では具体的な活用方法と成功事例を解説します。 多くの人がカードローンを利用し、複数の借入れを抱えています。この状況では、返済に頭を悩ませたり、..." />
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>複数のカードローンを借りている人へ｜おまとめローンのメリット</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:48:03.422Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2950,45 +2927,45 @@
 </nav>
 
       <p>カードローン おまとめは、借入金利を最大30%削減できる効果的な手法です。本記事では具体的な活用方法と成功事例を解説します。</p>
-<p>多くの人がカードローンを利用し、複数の借入れを抱えています。この状況では、返済に頭を悩ませたり、金利が高いことで返済が大変になることがあります。そこでJohn Doe氏のおまとめローンを活用すれば、様々なメリットが得られます。この記事では、複数のカードローンを抱えるMary Smith氏にとってのJohn Doe氏のおまとめローンのメリットについて詳しく解説します。</p>
+<p>複数のカードローンを利用していると、それぞれの返済日や金利が異なり、管理が煩雑になりがちです。そんな時に検討したいのが「おまとめローン」です。この記事では、おまとめローンのメリットと注意点を解説します。</p>
 <h3 id="section-1">カードローンの返済が楽になる</h3>
-<p>複数のカードローンを抱えていると、それぞれの返済日や返済額を把握するのが大変です。John Doe氏のおまとめローンを利用すれば、それらが一本化されるため、返済管理が簡単になります。返済日も統一されるので、返済忘れのリスクも下がります。</p>
-<p>#### 返済額の減額も可能</p>
-<p>John Doe氏のおまとめローンでは、金利の見直しや返済期間の延長が可能です。そのため、Mary Smith氏のカードローンの高金利をJohn Doe氏のおまとめローンの低金利（年間平均7.2%（○○調査, 2024））に切り替えることで、毎月の返済額を約25%減らすことができます（○○調査, 2024）。返済負担が大きいMary Smith氏にとって、大きなメリットといえるでしょう。</p>
-<p>#### 返済計画の立てやすさ</p>
-<p>Mary Smith氏のカードローンを一本化すれば、返済計画の立案が容易になります。返済額や返済期間が明確になるので、無理のない返済計画を立てられます。これにより、返済を滞らせるリスクも60%下がります（○○調査, 2024）。</p>
+<p>複数の借入を抱えていると、返済日や返済額の把握が大変です。おまとめローンを利用すれば借入が一本化され、返済管理がシンプルになります。返済日が月1回に統一されるため、返済忘れのリスクも軽減されます。</p>
+<h4>返済額の見直しが可能</h4>
+<p>おまとめローンでは、金利の見直しや返済期間の調整が可能な場合があります。複数の高金利借入を低金利のローンに一本化することで、毎月の返済負担を軽減できる可能性があります。</p>
+<h4>返済計画が立てやすくなる</h4>
+<p>借入を一本化すれば、返済額や完済時期が明確になります。無理のない返済計画を立てやすくなり、計画的に完済を目指すことができます。</p>
 <h3 id="section-2">金利の削減</h3>
-<p>カードローンは、利用者の信用度によって金利が異なる傾向にあります。一方、John Doe氏のおまとめローンは信用力の高い金融機関が提供しているため、比較的低い金利での借り入れが可能です。</p>
-<p>#### 金利の一律化</p>
-<p>John Doe氏のおまとめローンでは、Mary Smith氏の複数のカードローンの金利が9.8%に統一されます（○○調査, 2024）。高金利の借入れをJohn Doe氏のおまとめローンの低金利に置き換えることで、トータルの支払い利息を約30%削減できます（○○調査, 2024）。これにより、毎月の返済負担が軽減されます。</p>
-<p>#### 固定金利の適用</p>
-<p>John Doe氏のおまとめローンの多くは固定金利で提供されています。Mary Smith氏のカードローンの場合、金利が変動するリスクがありますが、John Doe氏のおまとめローンなら金利の変動がないため、返済額の予測が立てやすくなります。</p>
-<h3 id="section-3">融資額の増額</h3>
-<p>John Doe氏のおまとめローンを利用することで、融資額の増額を申請できる場合があります。これは、信用力の向上や返済能力の証明になるためです。</p>
-<p>#### 複数の借入れを一本化することで</p>
-<p>Mary Smith氏のカードローンを一本化すれば、返済状況が把握しやすくなります。これにより、金融機関にとっても借り手の信用力が高く見えるようになり、融資額の増額（最大50%）につながります（○○調査, 2024）。借入れ上限額の引き上げは、必要資金の調達に役立つでしょう。</p>
-<p>#### 返済実績の証明</p>
-<p>John Doe氏のおまとめローンの返済実績は、金融機関にとって重要な情報となります。返済が順調であれば、Mary Smith氏の信用力を示す証拠になります。この実績を活かせば、さらなる融資額の増額（最大30%）が期待できます（○○調査, 2024）。</p>
-<h3 id="section-4">個人信用情報への影響の軽減</h3>
-<p>Mary Smith氏のカードローンの借入れが多いと、個人信用情報に悪影響を及ぼす可能性があります。しかし、John Doe氏のおまとめローンを活用することで、その影響を軽減できます。</p>
-<p>#### 借入れ件数の減少</p>
-<p>Mary Smith氏の複数のカードローンをJohn Doe氏のおまとめローンに一本化すれば、借入れ件数が3件から1件に減少します（○○調査, 2024）。個人信用情報の「借入れ件数」項目への影響が小さくなるため、信用力の低下を65%抑えられます（○○調査, 2024）。</p>
-<p>#### 返済状況の改善</p>
-<p>John Doe氏のおまとめローンへの返済が順調であれば、Mary Smith氏の個人信用情報の「返済状況」項目に好影響を与えます。これにより、信用力の維持や向上につながります。</p>
+<p>カードローンの金利は、利用者の信用度や借入額によって異なります。おまとめローンは銀行などが提供しており、消費者金融より低い金利で借りられることが多いです。</p>
+<h4>金利の一本化</h4>
+<p>複数のカードローンを利用していると、それぞれ異なる金利が適用されています。おまとめローンに一本化すれば、1つの金利に統一されるため、利息の計算がシンプルになります。特に高金利の借入がある場合は、利息削減効果が期待できます。</p>
+<h4>固定金利のメリット</h4>
+<p>おまとめローンの多くは固定金利で提供されています。金利が変動しないため、返済総額の見通しが立てやすく、計画的な返済が可能になります。</p>
+<h3 id="section-3">信用情報への影響</h3>
+<p>おまとめローンを利用して借入を一本化することで、信用情報にも良い影響を与える可能性があります。</p>
+<h4>借入件数の減少</h4>
+<p>複数の借入をおまとめローンに一本化すれば、借入件数が減少します。信用情報機関には借入件数も記録されるため、件数が減ることで今後の審査にプラスに働く可能性があります。</p>
+<h4>返済実績の積み重ね</h4>
+<p>おまとめローンで毎月きちんと返済を続けることで、良好な返済実績を積み重ねることができます。これは将来的な信用力の向上につながります。</p>
+<h3 id="section-4">おまとめローンの注意点</h3>
+<p>メリットが多いおまとめローンですが、注意すべき点もあります。</p>
+<h4>返済期間が長くなると総支払額が増える</h4>
+<p>おまとめローンで返済期間を延ばすと、毎月の返済額は減りますが、支払う利息の総額は増える可能性があります。金利だけでなく、返済期間と総支払額も確認しましょう。</p>
+<h4>新たな借入は控える</h4>
+<p>おまとめローンで借入を一本化した後に、空いた枠で新たに借入をしてしまうと意味がありません。完済を目指して計画的に返済を続けることが大切です。</p>
 <h2 id="section-5">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンおまとめにはどのようなメリットがあるか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンおまとめには、返済管理の簡便化、金利削減、融資額増額、信用情報への影響軽減など、さまざまなメリットがあります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンおまとめによって、返済額はどのように変わるか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンおまとめを活用することで、高金利の借入れを低金利に切り替えられるため、毎月の返済額を約25%削減できます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンおまとめによって、信用情報への影響はどのように変わるか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンおまとめにより、借入れ件数が減少し、返済状況が改善されるため、信用力の低下を65%抑えられます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンおまとめでは、融資額の増額はできるか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンおまとめを利用することで、返済状況の改善や信用力の向上が評価され、最大で50%の融資額増額が期待できます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンおまとめの平均金利はどのくらいか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">カードローンおまとめの平均金利は年間7.2%程度となっており、高金利のカードローンよりも低くなっています。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">おまとめローンのメリットは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">返済の一本化による管理の簡便化、金利の削減、借入件数の減少による信用情報への好影響などがあります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">おまとめローンで本当に返済額は減りますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">高金利の借入を低金利に切り替えられれば利息負担は減ります。ただし返済期間を延ばすと総支払額が増える場合もあるため、シミュレーションで確認しましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">おまとめローンの審査は厳しいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">通常のカードローンと同様に、安定した収入と返済能力が審査されます。複数の借入があっても、延滞がなければ審査に通る可能性はあります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">おまとめローンの金利相場はどのくらいですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">銀行系のおまとめローンは年3%〜15%程度、消費者金融系は年6%〜18%程度が一般的です。借入額や審査結果によって異なります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">おまとめローン利用後に注意すべきことは?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">空いた枠で新たに借入をしないことが重要です。また、完済まで計画的に返済を続けることを心がけましょう。</span></div> </div>
 <h2 id="section-6">まとめ</h2>
 <figure class="article-image">
   <img src="https://picsum.photos/seed/1151800647/1200/630" alt="まとめ" loading="lazy" decoding="async" width="800" height="450">
   <figcaption>
-<p><a href="https://picsum.photos" target="_blank" rel="noopener nofollow noreferrer">Photo from Lorem Picsum</a></p>
+
   </figcaption>
 </figure>
-<p>複数のカードローンを抱えているMary Smith氏にとって、John Doe氏のおまとめローンはさまざまなメリットがあります。返済の簡便化、金利の削減、融資額の増加、個人信用情報への影響の軽減など、借入れ管理を改善できる選択肢といえるでしょう。カードローンの返済に頭を悩ませているMary Smith氏は、ぜひJohn Doe氏のおまとめローンの活用を検討してみてください。</p>
+<p>複数のカードローンを抱えている方にとって、おまとめローンは返済管理を楽にする有効な選択肢です。返済の一本化、金利の削減、信用情報への好影響など、多くのメリットがあります。ただし、返済期間の延長による総支払額の増加には注意が必要です。カードローンの返済に悩んでいる方は、おまとめローンの活用を検討してみてください。</p>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%82%92%E5%80%9F%E3%82%8A%E3%81%A6%E3%81%84%E3%82%8B%E4%BA%BA%E3%81%B8%EF%BD%9C%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3007,183 +2984,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(12)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -15,7 +15,8 @@
   
   <title>総量規制とは？年収の3分の1以上借りられない理由</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,7 +2701,8 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2769,7 +2771,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2784,7 +2785,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2803,7 +2803,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "キャリア",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2830,7 +2829,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "キャリア",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2846,39 +2844,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2889,17 +2869,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>総量規制とは？年収の3分の1以上借りられない理由</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:51:43.157Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2907,7 +2884,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2968,28 +2945,33 @@
 <h3 id="section-1">総量規制とは何か？</h3>
 <p>総量規制とは、消費者金融やクレジットカード会社などの貸金業者が、顧客の年収に対して貸し付けられる総額を制限する仕組みのことです。つまり、年収の3分の1以上を借りることはできないというルールです。この規制は、消費者の過度な借金を防ぐことを目的としています。</p>
 <h3 id="section-2">総量規制の背景と目的</h3>
-<p>総量規制が設けられた主な背景には、バブル経済崩壊後の消費者金融業界の過剰貸し付けによる消費者の過剰債務問題がありました。当時、消費者金融会社は顧客の返済能力を十分に確認せずに、無秩序な貸し付けを行っていたため、多くの消費者が返済に苦しむ事態となっていました（〜〜（消費者金融協会調査, 2006））。</p>
-<p>そこで、2006年の貸金業法改正によって総量規制が導入されることになったのです。この規制の目的は、消費者の過剰な借入れを抑制し、健全な借金生活を送れるようにすることにあります。</p>
+<p>総量規制が設けられた背景には、かつての消費者金融業界における過剰貸付の問題がありました。返済能力を超えた借入により多重債務に陥る人が社会問題となり、2006年の貸金業法改正によって総量規制が導入されました。</p>
+<p>この規制の目的は、消費者が返済能力を超えた借入をしないよう保護することにあります。</p>
 <h3 id="section-3">総量規制の具体的な内容</h3>
 <p>総量規制の詳細な内容は以下の通りです。</p>
-<p>#### 年収の3分の1以内の借入れ</p>
-<p>貸金業者は、顧客の年収の3分の1を超える金額を貸し付けることはできません。つまり、年収500万円の人であれば、最大で年間167万円までしか借りられないということになります。</p>
-<p>#### 借入れ合計額の上限</p>
-<p>さらに、すべての貸金業者からの借入れ合計額についても年収の3分の1以内に抑える必要があります。例えば、年収500万円の人の借入れ上限は167万円となりますが、この167万円は複数の貸金業者からの借入れ合計額となります。</p>
-<p>#### 返済能力の確認</p>
-<p>貸金業者は、顧客の年収や返済能力を十分に確認しなければなりません。顧客が返済できない過剰な借入れを行うことのないよう、慎重な審査が求められているのです（審査に平均して30分以上かかる（消費者金融協会調査, 2022））。</p>
-<h3 id="section-4">総量規制の影響</h3>
-<p>このように、総量規制によって消費者の借入れに一定の歯止めがかかることになりました。過剰債務に陥るリスクが減少し、健全な借金生活を送れるようになったと言えるでしょう（導入企業の75%が効果を実感（金融庁調査, 2021））。</p>
-<p>しかし、一方で総量規制によって、これまで借入れを利用していた低所得者層の資金繰りが厳しくなるという影響も生じています（低所得者層の借入れ利用が10%減少（消費者金融協会調査, 2022））。また、銀行のような他の金融機関からの借入れについては総量規制の対象外となっているため、消費者の借入先が偏る傾向も見られます（銀行借入れが20%増加（日本銀行調査, 2023））。</p>
+<h4>年収の3分の1以内の借入</h4>
+<p>貸金業者は、顧客の年収の3分の1を超える金額を貸し付けることができません。例えば、年収300万円の人であれば、最大100万円までしか借りられません。</p>
+<h4>他社借入を含めた合計額で判断</h4>
+<p>この3分の1の上限は、1社だけでなくすべての貸金業者からの借入合計額で計算されます。すでに他社から50万円借りている年収300万円の人は、新たに借りられるのは最大50万円までとなります。</p>
+<h4>収入証明書の提出</h4>
+<p>50万円を超える借入、または他社との合計が100万円を超える場合は、収入証明書（源泉徴収票、確定申告書など）の提出が必要です。</p>
+<h3 id="section-4">総量規制の対象外となるもの</h3>
+<p>総量規制はすべての借入に適用されるわけではありません。以下のものは対象外です。</p>
+<h4>銀行カードローン</h4>
+<p>銀行は貸金業者ではないため、銀行カードローンは総量規制の対象外です。ただし、銀行も自主的に審査を厳格化しており、年収の3分の1を超える融資を行わないケースが増えています。</p>
+<h4>住宅ローン・自動車ローン</h4>
+<p>住宅ローンや自動車ローンなど、特定の目的のためのローンは総量規制の対象外です。</p>
+<h4>おまとめローン（借換え）</h4>
+<p>複数の借入を一本化するおまとめローンも、顧客に有利な借換えであれば例外として認められています。</p>
 <h3 id="section-5">まとめ</h3>
 <p>総量規制は、消費者の過剰な借入れを抑制し、健全な借金生活を実現するための重要なルールです。しかし、一方で借入れ機会の減少など、一部の消費者に対してはマイナスの影響も生じています。</p>
 <p>今後は、総量規制の柔軟な運用や、消費者への適切な資金繰りサポートなど、消費者の実情に合った対策が求められるでしょう。消費者金融業界と消費者双方のニーズにバランスよく応える取り組みが期待されます。</p>
 <h2 id="section-6">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">総量規制とは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">総量規制とは、貸金業者が顧客の年収に対して貸し付けられる総額を年収の3分の1以内に制限するルールです。これは過剰な借金を防ぐことが目的です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">なぜ総量規制が導入されたのですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">バブル経済崩壊後の消費者金融業界の過剰貸し付けによる消費者の過剰債務問題を背景に、2006年の貸金業法改正によって総量規制が導入されました。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">総量規制の具体的な内容は何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">総量規制の詳細は、1)年収の3分の1以内の借入れ、2)すべての借入れ合計額も年収の3分の1以内、3)返済能力の確認などが定められています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">総量規制にはどのような影響がありますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">総量規制により、過剰債務のリスクが減少し、健全な借金生活を送れるようになりました。一方で低所得者層の資金繰りが厳しくなるなどの影響も生じています。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">今後の総量規制に期待されることは何ですか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">総量規制の柔軟な運用や、消費者への適切な資金繰りサポートなど、消費者の実情に合った対策が求められています。消費者と業界のニーズのバランスを取ることが期待されます。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">総量規制とは何ですか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">貸金業者からの借入総額を年収の3分の1以内に制限するルールです。消費者の過剰な借入を防ぐために2006年の貸金業法改正で導入されました。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">銀行カードローンも総量規制の対象ですか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">いいえ、銀行は貸金業者ではないため総量規制の対象外です。ただし、銀行も自主的に審査基準を厳しくしています。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">年収の3分の1を超えて借りる方法はありますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">銀行カードローンは総量規制の対象外ですが、審査は厳しくなります。また、おまとめローン（借換え）は例外として認められる場合があります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">総量規制に引っかかるとどうなりますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">新たな借入の審査に通らなくなります。すでに年収の3分の1近くまで借りている場合は、追加の借入ができません。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">住宅ローンも総量規制に含まれますか？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">いいえ、住宅ローンは総量規制の対象外です。自動車ローンなど特定目的のローンも対象外となります。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E7%B7%8F%E9%87%8F%E8%A6%8F%E5%88%B6%E3%81%A8%E3%81%AF%EF%BC%9F%E5%B9%B4%E5%8F%8E%E3%81%AE3%E5%88%86%E3%81%AE1%E4%BB%A5%E4%B8%8A%E5%80%9F%E3%82%8A%E3%82%89%E3%82%8C%E3%81%AA%E3%81%84%E7%90%86%E7%94%B1&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -3008,157 +2990,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(18)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%A2%97%E9%A1%8D/" class="tag-item tag-small">カードローン 増額</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E7%84%A1%E8%81%B7/" class="tag-item tag-small">カードローン 無職</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

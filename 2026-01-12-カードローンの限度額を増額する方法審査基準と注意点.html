@@ -15,7 +15,8 @@
   
   <title>カードローンの限度額を増額する方法｜審査基準と注意点</title>
   
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <style>
     /* カラー変数（外部CSSが読み込めない場合のフォールバック） */
     :root {
@@ -2700,10 +2701,11 @@
     /* 注意: 詳細なサイトスタイルは外部CSS /assets/css/style.css を参照 */
   </style>
   <!-- 外部CSS（サイト骨組みスタイル） -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium-style.css">
   <!-- OGP (Open Graph Protocol) -->
   <meta property="og:title" content="カードローンの限度額を増額する方法｜審査基準と注意点" />
-  <meta property="og:description" content="カードローンの限度額を増額することで、借入額を最大△△%まで引き上げることができます。審査基準と注意点を解説します。 ### キーワード: カードローン 増額 カードローンは、緊急時の資金調達に便利なツールですが、..." />
+  <meta property="og:description" content="カードローンの限度額増額は、返済実績を積むことで可能になります。審査基準と増額のコツを解説します。" />
   <meta property="og:url" content="https://example.com/articles/2026-01-12-カードローンの限度額を増額する方法審査基準と注意点/" />
   <meta property="og:site_name" content="ギャランティークリアガイド" />
   <meta property="og:type" content="article" />
@@ -2720,7 +2722,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="カードローンの限度額を増額する方法｜審査基準と注意点" />
-  <meta name="twitter:description" content="カードローンの限度額を増額することで、借入額を最大△△%まで引き上げることができます。審査基準と注意点を解説します。 ### キーワード: カードローン 増額 カードローンは、緊急時の資金調達に便利なツールですが、..." />
+  <meta name="twitter:description" content="カードローンの限度額増額は、返済実績を積むことで可能になります。審査基準と増額のコツを解説します。" />
   <meta name="twitter:image" content="https://picsum.photos/seed/1279820674/1200/630" />
   <meta name="twitter:image:alt" content="カードローンの限度額を増額する方法｜審査基準と注意点" />
   <script type="application/ld+json">
@@ -2753,7 +2755,6 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://example.com/#author-",
-    "name": "運営者名",
     "jobTitle": "",
     "description": "",
     "worksFor": {
@@ -2768,7 +2769,6 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://example.com/#organization",
-    "name": "運営者名",
     "url": "https://example.com",
     "logo": "",
     "sameAs": []
@@ -2787,7 +2787,6 @@
         "@type": "ListItem",
         "position": 2,
         "name": "金融・投資",
-        "item": "https://example.com/category//"
       },
       {
         "@type": "ListItem",
@@ -2814,7 +2813,6 @@
       "@type": "ListItem",
       "position": 2,
       "name": "金融・投資",
-      "item": "https://example.com/category//"
     },
     {
       "@type": "ListItem",
@@ -2830,39 +2828,21 @@
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- サイト統一ヘッダー -->
-  <header class="site-header header-topbar-nav">
-  <div class="topbar">
-    <div class="container">
-      <span class="topbar-text">借りる前の不安を、借りた後の安心に</span>
-      <div class="topbar-social">
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="main-header">
-    <div class="container">
-      <a href="../index.html" class="site-logo">ギャランティークリアガイド</a>
-      <nav class="site-nav site-nav-desktop">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-      </nav>
-      
-    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+<header class="site-header">
+  <div class="header-container">
+    <a href="./index.html" class="site-logo"><img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img"></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
+      <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+      <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
+      <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
+      <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
+    </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
-      
-    <nav class="site-nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
-      <a href="../index.html">ホーム</a>
-      <a href="../index.html#articles">記事一覧</a>
-      <a href="../about.html">サイトについて</a>
-      <a href="../contact.html">お問い合わせ</a>
-    </nav>
-    </div>
   </div>
 </header>
 
@@ -2873,17 +2853,14 @@
       <div class="container">
         <div class="site-name">ギャランティークリアガイド</div>
         <h1>カードローンの限度額を増額する方法｜審査基準と注意点</h1>
-        <div class="meta">
-          <time datetime="2026-01-12T06:48:56.739Z">2026年1月12日</time>
-        </div>
       </div>
-      <div class="image-credit"><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer nofollow">Photo from Lorem Picsum</a></div>
+      
     </div>
   </header>
 
   <!-- トップページへ戻るリンク -->
   <div class="back-to-home-container">
-    <a href="../index.html" class="back-to-home">
+    <a href="./index.html" class="back-to-home">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"></polyline>
       </svg>
@@ -2891,7 +2868,7 @@
     </a>
   </div>
 
-  <main class="main-layout with-sidebar sidebar-wide">
+  <main class="main-layout">
     <article class="article-content">
       
 <nav class="table-of-contents" aria-label="目次">
@@ -2928,52 +2905,53 @@
   </ol>
 </nav>
 
-      <p>カードローンの限度額を増額することで、借入額を最大△△%まで引き上げることができます。審査基準と注意点を解説します。</p>
-<h3 id="section-1">キーワード: カードローン 増額</h3>
-<p>カードローンは、緊急時の資金調達に便利なツールですが、時間が経つと限度額を増やしたくなることがあります。本記事では、「カードローンの限度額を増額する方法」と、その「審査基準」、「注意点」について詳しく解説します。</p>
-<p>#### カードローンとは</p>
-<p>カードローンとは、銀行やクレジットカード会社が提供する、即座に借り入れができるサービスです。必要な時に随時お金を借りられ、返済もできるので、急な出費にも対応できます。また、限度額の範囲内であれば、繰り返し借りられるのも特徴です。</p>
-<p>##### カードローンの特徴</p>
+      <p>カードローンの限度額増額は、返済実績を積むことで可能になります。審査基準と増額のコツを解説します。</p>
+<h2 id="section-1">カードローンの増額とは</h2>
+<p>カードローンは、緊急時の資金調達に便利なツールですが、最初に設定された限度額では不足することもあります。本記事では、カードローンの限度額を増額する方法と、審査基準、注意点について解説します。</p>
+<h3>カードローンの基本</h3>
+<p>カードローンは、限度額の範囲内であれば何度でも借入・返済ができる便利なローン商品です。銀行や消費者金融が提供しており、担保・保証人不要で利用できます。</p>
+<h4>カードローンの特徴</h4>
 <ul>
-<li>必要な時に随時借りられる</li>
-<li>返済も自由に行える</li>
 <li>限度額の範囲内で繰り返し借りられる</li>
+<li>ATMやスマホアプリから手軽に利用可能</li>
+<li>毎月の返済額は借入残高に応じて変動</li>
 </ul>
-<p>このように、カードローンは柔軟な資金調達手段として人気を集めています。ただし、限度額が低いと使い勝手が悪くなるため、状況に合わせて限度額を増やすことが重要です。</p>
-<p>#### カードローンの限度額を増額する方法</p>
-<p>カードローンの限度額を増額する方法には、いくつかのパターンがあります。状況に合わせて、最適な方法を選択しましょう。</p>
-<p>##### 1. 定期的な増額審査を活用する 多くのカードローン会社では、一定期間ごとに自動的に限度額の増額審査を行っています。審査では、借入履歴や返済状況、収入などが確認され、審査基準を満たせば限度額が引き上げられます（カードローン会社の○○%が定期的な増額審査を実施 - ○○調査, 2024）。</p>
-<p>このような定期的な増額審査を活用することで、手続きをせずに自動的に限度額を増やすことができます。ただし、審査基準を満たしていない場合は、増額されない可能性もあるので注意が必要です。</p>
-<p>##### 2. 増額の申請を行う 定期的な増額審査とは別に、自身で増額の申請を行うことも可能です。必要書類を提出し、審査に合格すれば、限度額を引き上げてもらえます。</p>
-<p>増額申請では、収入証明書や返済能力を示す書類などを提出することが一般的です。審査では、借入履歴、返済状況、収入などが確認され、審査基準を満たしていれば増額が認められます（増額申請の○○%が承認される - ○○調査, 2024）。</p>
-<p>この方法は、自分のタイミングで限度額を変更できるため、状況に合わせて柔軟に対応できるのがメリットです。ただし、審査に時間がかかる可能性もあるので、余裕を持って申請しましょう。</p>
-<p>##### 3. 他社のカードローンに切り替える カードローン会社によって、限度額の設定や審査基準が異なります。自分に合ったカードローンを見つけるためには、他社のサービスにも目を向ける必要があります。</p>
-<p>他社のカードローンに乗り換えることで、自分の状況に合った限度額を設定してもらえる可能性があります（カードローン市場は2024年に○○億円規模 - ○○調査, 2024）。ただし、切り替えの際は手続きが必要なため、事前に確認が必要です。</p>
-<p>また、新規の借入れとなるため、審査の際は、収入証明書などの書類を提出する必要があります。十分な準備をして、スムーズな切り替えを行いましょう。</p>
-<p>#### 限度額増額の審査基準</p>
-<p>カードローンの限度額を増額する際は、必ず審査が行われます。審査では以下の項目が確認されます。</p>
-<p>##### 収入 借入れ能力の指標となる年収や月収が、審査の重要なポイントになります。安定した収入があることが、限度額増額の大きな条件となります。</p>
-<p>##### 返済履歴 過去の借入履歴と返済状況が確認されます。遅延やデフォルトがなく、適切に返済できていることが重要です（カードローンの返済履歴良好率は○○% - ○○調査, 2024）。</p>
-<p>##### 資産 預貯金の額や不動産の保有状況など、資産の状況も審査の対象となります。一定の資産があれば、限度額増額の可能性が高まります。</p>
-<p>##### 信用情報 信用情報機関に登録されている情報が確認されます。延滞や過剰な借入れがないことが求められます。</p>
-<p>このように、収入、返済履歴、資産、信用情報など、総合的に判断されるのが限度額増額の審査基準です。自身の状況を把握し、審査に合格するよう心がけましょう。</p>
-<p>#### 限度額増額時の注意点</p>
-<p>カードローンの限度額を増額する際は、以下の点に注意が必要です。</p>
-<p>##### 返済能力の確認 限度額が増えても、返済が困難にならないよう、自身の返済能力を十分に確認しましょう。収支状況を把握し、返済計画を立てることが重要です（限度額増額後の○○%が返済能力を確認 - ○○調査, 2024）。</p>
-<p>##### 利用目的の明確化 カードローンは緊急時の資金調達に便利ですが、無秩序な利用は金銭的な問題を引き起こす可能性があります。限度額増額後も、利用目的を明確にして、計画的な利用を心がけましょう。</p>
-<p>##### 他の借入への影響 カードローンの限度額増額は、他の借入（住宅ローンなど）への影響を及ぼす可能性があります。総合的な借入状況を把握し、適切な判断を下すことが重要です。</p>
-<p>このように、限度額増額には様々な注意点があるため、自身の状況を十分に確認し、慎重に対応することが必要です。</p>
-<p>#### まとめ</p>
-<p>カードローンの限度額を増額する方法には、定期的な増額審査の活用、自身での増額申請、他社のカードローンへの乗り換えなどがあります。</p>
+<h2>限度額を増額する3つの方法</h2>
+<p>カードローンの限度額を増額するには、主に以下の方法があります。</p>
+<h3>1. 増額案内を待つ</h3>
+<p>多くのカードローン会社では、半年〜1年程度の利用実績があると増額案内が届くことがあります。遅延なく返済を続けていれば、会社側から「増額しませんか？」と提案されるケースも珍しくありません。</p>
+<h3>2. 自分から増額申請する</h3>
+<p>会員ページや電話から増額申請ができます。収入証明書（源泉徴収票や給与明細など）の提出が求められることが多いです。申請から審査結果が出るまで数日〜1週間程度かかります。</p>
+<h3>3. 他社への借り換え</h3>
+<p>現在のカードローンで増額が難しい場合、他社に新規申込するのも選択肢です。ただし、複数社からの借入は総量規制の対象となるため、年収の3分の1を超えないよう注意が必要です。</p>
+<h2>増額審査の基準</h2>
+<p>増額審査では以下のポイントが重視されます。</p>
+<h3>返済実績</h3>
+<p>最も重要なのは返済実績です。契約から半年〜1年以上経過し、遅延なく返済を続けていることが増額審査通過の大きな条件となります。</p>
+<h3>年収・収入</h3>
+<p>消費者金融の場合、総量規制により年収の3分の1が借入上限です。増額後の限度額がこれを超えないか確認されます。転職や昇給で収入が増えていればプラス材料になります。</p>
+<h3>他社借入状況</h3>
+<p>他社での借入件数や残高も審査されます。借入件数が多いと「多重債務リスクあり」と判断され、増額が見送られることもあります。</p>
+<h3>信用情報</h3>
+<p>信用情報機関（CIC、JICC等）に登録されている延滞履歴や他社借入状況が確認されます。直近で延滞があると審査に影響します。</p>
+<h2>増額時の注意点</h2>
+<h3>借りすぎに注意</h3>
+<p>限度額が増えると「もっと借りても大丈夫」と感じがちですが、借入額が増えれば返済負担も増えます。本当に必要な金額だけ借りることが大切です。</p>
+<h3>住宅ローンへの影響</h3>
+<p>カードローンの限度額（使っていなくても）は、住宅ローン審査で「借入可能額」としてカウントされることがあります。近々住宅ローンを組む予定がある場合は注意が必要です。</p>
+<h3>減額される可能性も</h3>
+<p>増額申請の結果、逆に限度額が減額されるケースもあります。収入が減った、他社借入が増えた等の場合は、申請を慎重に検討しましょう。</p>
+<h2>まとめ</h2>
+<p>カードローンの限度額増額には、半年〜1年以上の返済実績が重要です。</p>
 <p>審査では、収入、返済履歴、資産、信用情報などが確認されるため、自身の状況を把握し、審査基準を満たすよう心がける必要があります。</p>
 <p>また、限度額増額時には返済能力の確認、利用目的の明確化、他の借入への影響など、様々な注意点にも留意する必要があります。</p>
 <p>カードローンの限度額を適切に管理することで、緊急時の資金繰りに活用でき、より便利に利用できるでしょう。本記事を参考に、自身のニーズに合ったカードローンの活用方法を見つけてください。</p>
 <h2 id="section-2">よくある質問</h2>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの限度額を定期的に増額できますか?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">はい、多くのカードローン会社では一定期間ごとに自動的に限度額の増額審査を行っています。審査に合格すれば、手続きなしで限度額を引き上げることができます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの限度額を自分で増額する方法は?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">増額の申請を行うことで、自分のタイミングで限度額を変更できます。収入証明書や返済能力を示す書類を提出し、審査に合格すれば限度額を引き上げてもらえます。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">カードローンの限度額増額の審査基準は何?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">収入、返済履歴、資産、信用情報などが審査の対象となります。安定した収入があり、適切な返済実績があることが、限度額増額の重要な条件となります。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">限度額増額時の注意点は何?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">返済能力の確認、利用目的の明確化、他の借入への影響などに注意が必要です。増額後も計画的な利用を心がけ、自身の財務状況を十分に把握することが重要です。</span></div> </div></p>
-<p><div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">他社のカードローンに切り替える利点は?</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">他社のカードローンに乗り換えることで、自分の状況に合った限度額を設定してもらえる可能性があります。ただし、切り替えの際は審査が必要となるため、事前の準備が必要です。</span></div> </div></p>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">増額審査にはどれくらいかかる？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">会社によりますが、消費者金融では即日〜数日、銀行カードローンでは1週間程度かかることが多いです。収入証明書の提出が求められる場合は、さらに時間がかかる場合もあります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">増額審査で落ちることはある？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">あります。返済の遅延があった、他社借入が増えた、収入が減ったなどの場合は審査に通らないこともあります。また、契約から日が浅い場合も難しいケースが多いです。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">増額すると金利は下がる？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">限度額が上がると適用金利が下がるケースがあります。カードローンは限度額が高いほど金利が低くなる仕組みのため、増額で金利優遇を受けられる可能性があります。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">増額申請で限度額が下がることはある？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">まれにあります。増額申請時に再審査が行われ、収入減や他社借入増加が判明した場合、逆に減額されることも。申請前に自身の状況を確認しましょう。</span></div> </div>
+<div class="qa-box"> <div class="qa-question"><span class="qa-label">Q</span><span class="qa-text">何回でも増額申請できる？</span></div> <div class="qa-answer"><span class="qa-label">A</span><span class="qa-text">申請自体は可能ですが、短期間に何度も申請すると「資金繰りに困っている」と判断される可能性があります。前回の審査から半年〜1年程度は間隔を空けることをおすすめします。</span></div> </div>
 
       <div class="share-buttons">
         <a href="https://twitter.com/intent/tweet?text=%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%E3%81%AE%E9%99%90%E5%BA%A6%E9%A1%8D%E3%82%92%E5%A2%97%E9%A1%8D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%EF%BD%9C%E5%AF%A9%E6%9F%BB%E5%9F%BA%E6%BA%96%E3%81%A8%E6%B3%A8%E6%84%8F%E7%82%B9&url=" class="share-btn twitter" target="_blank" rel="noopener noreferrer ugc">
@@ -2992,184 +2970,8 @@
     </article>
 
     <!-- サイドバー（SEO最適化版） -->
-    <aside class="sidebar">
-      <button class="sidebar-mobile-toggle" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active');">
-        関連情報を表示
-      </button>
-      <div class="sidebar-mobile-content">
-
-      <div class="sidebar-widget sidebar-profile">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          運営者情報
-        </h3>
-        <div class="profile-content">
-          <p class="profile-name">ギャランティークリアガイド</p>
-          <p class="profile-company">運営者名</p>
-          <p class="profile-description">借りる前の不安を、借りた後の安心に</p>
-          <a href="../company.html" class="profile-link">運営者詳細 →</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-categories">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z"/></svg>
-          カテゴリー
-        </h3>
-        <ul class="widget-list category-list">
-          <li><a href="../category/%E9%87%91%E8%9E%8D%E3%83%BB%E6%8A%95%E8%B3%87.html">金融・投資<span class="category-count">(13)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-latest">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          新着記事
-        </h3>
-        <ul class="widget-list latest-article-list">
-
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-          <li class="latest-article-item">
-            <a href="/articles/2026-01-12-金利の安いカードローンランキング損しない選び方のポイント.html">
-              <span class="article-category-badge">金融・投資</span>
-              <span class="article-title">金利の安いカードローンランキング｜損しない選び方のポイント</span>
-              <span class="article-date">2026-01-12</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-related">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          関連記事
-        </h3>
-        <ul class="widget-list related-article-list">
-
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-2025年最新初めてのカードローン完全ガイド審査から返済まで徹底解説.html">
-              <span class="article-title">【2025年最新】初めてのカードローン完全ガイド｜審査から返済まで徹底解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンとは仕組みとメリットデメリットを分かりやすく解説.html">
-              <span class="article-title">カードローンとは？仕組みとメリット・デメリットを分かりやすく解説</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-カードローンの審査に落ちる人の特徴5選通過率を上げるコツ.html">
-              <span class="article-title">カードローンの審査に落ちる人の特徴5選｜通過率を上げるコツ</span>
-            </a>
-          </li>
-          <li class="related-article-item">
-            <a href="/articles/2026-01-12-即日融資可能なカードローン比較本当に今日借りられる.html">
-              <span class="article-title">即日融資可能なカードローン比較｜本当に今日借りられる？</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="sidebar-widget sidebar-tags">
-        <h3 class="widget-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          タグ
-        </h3>
-        <div class="tag-cloud">
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%88%9D%E3%82%81%E3%81%A6/" class="tag-item tag-small">カードローン 初めて</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%A8%E3%81%AF/" class="tag-item tag-small">カードローン とは</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB/" class="tag-item tag-small">カードローン 審査</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B3%E6%97%A5/" class="tag-item tag-small">カードローン 即日</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%87%91%E5%88%A9%20%E5%AE%89%E3%81%84/" class="tag-item tag-small">カードローン 金利 安い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%8D%B1%E9%99%BA/" class="tag-item tag-small">カードローン 危険</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E9%8A%80%E8%A1%8C%20%E6%B6%88%E8%B2%BB%E8%80%85%E9%87%91%E8%9E%8D/" class="tag-item tag-small">カードローン 銀行 消費者金融</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%9C%A8%E7%B1%8D%E7%A2%BA%E8%AA%8D%E3%81%AA%E3%81%97/" class="tag-item tag-small">カードローン 在籍確認なし</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E5%AF%A9%E6%9F%BB%20%E7%94%98%E3%81%84/" class="tag-item tag-small">カードローン 審査 甘い</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E4%BF%A1%E7%94%A8%E6%83%85%E5%A0%B1/" class="tag-item tag-small">カードローン 信用情報</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/" class="tag-item tag-small">カードローン 返済 シミュレーション</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E8%BF%94%E6%B8%88%20%E8%8B%A6%E3%81%97%E3%81%84/" class="tag-item tag-small">カードローン 返済 苦しい</a>
-          <a href="../tag/%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%20%E3%81%8A%E3%81%BE%E3%81%A8%E3%82%81/" class="tag-item tag-small">カードローン おまとめ</a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget sidebar-cta">
-        <div class="cta-box">
-          <p class="cta-title">お問い合わせ</p>
-          <p class="cta-description">ご質問・ご相談はお気軽にどうぞ</p>
-          <a href="../contact.html" class="cta-button">お問い合わせ</a>
-        </div>
-      </div>
-      </div>
-    </aside>
   </main>
 
-  <!-- サイト統一フッター -->
-  <footer class="site-footer footer-mega">
-  <div class="container">
-    <div class="footer-mega-grid">
-      <div class="footer-brand">
-        <h3 class="footer-logo">ギャランティークリアガイド</h3>
-        <p>借りる前の不安を、借りた後の安心に</p>
-        
-      </div>
-      <div class="footer-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="../index.html#articles">記事一覧</a></li>
-          <li><a href="../about.html">サイトについて</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>法的情報</h4>
-        <ul>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../company.html">運営者情報</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>お問い合わせ</h4>
-        <ul>
-          <li><a href="../contact.html">お問い合わせフォーム</a></li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 運営者名 All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../company.html">Company</a>
-      </nav>
-    </div>
-  </div>
-</footer>
 
   <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
